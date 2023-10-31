@@ -1,0 +1,112 @@
+{
+    "header": {
+        "nav_links": ["About", "Skills", "Work", "Contact"],
+        "title": "Web Developer",
+        "subtitle": "Hey! I'm Juan,",
+        "description": "I like to create attractive, structured and well communicated solutions for all kind of web users.",
+        "cv": {
+            "title": "Download CV"
+        }
+    },
+    "about": {
+        "title": "About me",
+        "description": {
+            "paragraph1": "I'm based in Colombia and started my road as a programmer since 2022 as an autodidact. From there, my curiosity and passion for this career have been growing each day.Currently i’ve been working with front end and back end technologies building somethings for the web",
+            "paragraph2": "Also, i'm a person who: likes continuous learning, dedicated, oriented to details and with good analytical ability. Right now and for the future: i want to learn/practice more about design as an extra for my web skills improvement."
+        }
+    },
+    "skills": {
+        "title:": "My skills",
+        "description": ""
+    },
+    "work": {
+        "main": {
+            "title": "Projects",
+            "projects": [
+                {
+                    "title": "Soflink - Project management platform'",
+                    "description": "Collaborative application for project management. Organize, add, assign and eliminate project tasks.",
+                    "technologies": ["Typescript", "ReactJS", "Express JS", "NodeJS", "Mongodb", "Graphql", "Prisma", "Apollo", "Websocket", "Auth0", "HTML", "TailwindCSS"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1695400314/softlink.vercel.app_projects_Desktop_3_1_lav0s6.png",
+                    "url": "https://softlink.vercel.app/",
+                    "repository": "https://github.com/juandavid015/X-Project-Management",
+                    "button_visit": "View project"
+                },
+                {
+                    "title": "Zero Two - Anime page",
+                    "description": "Manage data brought from an external API (Kitsu API). Some features: process and functionality for authentication and authorization with third parties (log in and register); adding to the list and changing user settings; filtering, sorting and searching the anime list; comment interaction in anime episodes.",
+                    "technologies": ["Typescript", "ReactJS", "Express JS", "NodeJS", "PostgreSQL", "Sequelize", "Redux", "HTML", "CSS"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1695400154/zerotwo-deploy.vercel.app_home_Desktop_3_qdzjjr.png",
+                    "url": "https://zerotwo-deploy.vercel.app/",
+                    "repository": "https://github.com/juandavid015/zerotwo-deploy",
+                    "button_visit": "View project"
+                }
+            ]
+        },
+        "other": {
+            "title": "Other",
+            "projects": [
+                {
+                    "title": "Todo App",
+                    "resume": "Add things to do on your daily",
+                    "technologies": ["JavaScript", "ReactJS", "CSS", "HTML"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702600/Desktop_Result_2_iikers.png",
+                    "url": "https://frontendmentor-todo-app-three.vercel.app/",
+                    "repository": "https://github.com/juandavid015/Frontendmentor-todo-app",
+                    "button_visit": "See more"
+                },
+                {
+                    "title": "Advice Generator",
+                    "resume": "Bring random quotes extracted from external API",
+                    "technologies": ["JavaScript", "CSS", "HTML"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702826/frontend-mentor-advice-generator-app-nine.vercel.app__Dektop_3_zfoflm.png",
+                    "url": "https://frontend-mentor-advice-generator-app-nine.vercel.app/",
+                    "repository": "https://github.com/juandavid015/FrontendMentor-AdviceGeneratorApp-",
+                    "button_visit": "See more"
+                },
+                {
+                    "title": "Expenses Chart",
+                    "resume": "Chart showing dynamically statistics of a simulated database",
+                    "technologies": ["JavaScript", "CSS", "HTML"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702747/frontend-mentor-expenses-chart-component-omega.vercel.app__Dektop_3_umj4hu.png",
+                    "url": "https://frontend-mentor-expenses-chart-component-omega.vercel.app/",
+                    "repository": "https://github.com/juandavid015/Frontendementor-Expenses-Chart",
+                    "button_visit": "See more"
+                },
+                {
+                    "title": "Time tracking dashboard",
+                    "resume": "Dashboard to track the user’s daily time.",
+                    "technologies": ["JavaScript", "ReactJS", "CSS", "HTML"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702695/9e232870-3a88-4467-9202-326442deac2b_rheonr.png",
+                    "url": "https://frontend-mentor-time-tracking-dashboard-nine.vercel.app/",
+                    "repository": "https://github.com/juandavid015/FrontendMentor-time-tracking-dashboard",
+                    "button_visit": "See more"
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Get in touch or shoot me an email directly on juandavidgr1002@gmail.com",
+        "extra": {
+            "title": "Or find me in"
+        },
+        "form": {
+            "name": {
+                "title": "Name",
+                "placeholder": "Name"
+            },
+            "email": {
+                "title": "Email",
+                "placeholder": "Email"
+            },
+            "message": {
+                "title": "Message",
+                "placeholder": "Your message..."
+            },
+            "submit": {
+                "title": "Send message"
+            }
+        }
+    }
+}

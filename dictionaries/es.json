@@ -1,0 +1,112 @@
+{
+    "header": {
+        "nav_links": ["Acerca", "Habilidades", "Proyectos", "Contacto"],
+        "title": "Desarrollador Web",
+        "subtitle": "Hola! Mi nombre es Juan,",
+        "description": "Me gusta crear soluciones atractivas, estructuradas y bien comunicadas para todo tipo de usuarios web.",
+        "cv": {
+            "title": "Descargar CV"
+        }
+    },
+    "about": {
+        "title": "Acerca de mí",
+        "description": {
+            "paragraph1": "Resido en Colombia y comencé mi camino como programador a partir de 2022 de forma autodidacta. A partir de ahí, mi curiosidad y pasión por esta area han idocreciendo cada día. He estado trabajando con tecnologías tanto frontend como backend, desarrollando algunas aplicaciones para la web. ",
+            "paragraph2": "También, soy una persona a la que: le gusta el aprendizaje continuo, dedicada, orientada a los detalles y con buena capacidad analítica. Ahora mismo y a futro: quiero aprender/practicar más sobre diseño como un extra para mejorar mis habilidades en el desarrollo web."
+        }
+    },
+    "skills": {
+        "title:": "Mis habilidades",
+        "description": ""
+    },
+    "work": {
+        "main": {
+            "title": "Proyectos",
+            "projects": [
+                {
+                    "title": "Soflink - Project management platform'",
+                    "description": "Aplicación de colaboración para la gestión de proyectos. Organice, agregue, asigne y elimine tareas del proyecto.",
+                    "technologies": ["Typescript", "ReactJS", "Express JS", "NodeJS", "Mongodb", "Graphql", "Prisma", "Apollo", "Websocket", "Auth0", "HTML", "TailwindCSS"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1695400314/softlink.vercel.app_projects_Desktop_3_1_lav0s6.png",
+                    "url": "https://softlink.vercel.app/",
+                    "repository": "https://github.com/juandavid015/X-Project-Management",
+                    "button_visit": "Ver proyecto"
+                },
+                {
+                    "title": "Zero Two - Anime page",
+                    "description": "Administrar los datos traídos desde una API externa (API Kitsu). Algunas características: proceso y funcionalidad para autenticación y autorización con terceros (iniciar sesión y registrarse); agregar a la lista y cambiar la configuración del usuario; filtrado, clasificación y búsqueda de la lista de animes; interacción de comentarios en los episodios de anime.",
+                    "technologies": ["Typescript", "ReactJS", "Express JS", "NodeJS", "PostgreSQL", "Sequelize", "Redux", "HTML", "CSS"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1695400154/zerotwo-deploy.vercel.app_home_Desktop_3_qdzjjr.png",
+                    "url": "https://zerotwo-deploy.vercel.app/",
+                    "repository": "https://github.com/juandavid015/zerotwo-deploy",
+                    "button_visit": "Ver proyecto"
+                }
+            ]
+        },
+        "other": {
+            "title": "Otros",
+            "projects": [
+                {
+                    "title": "Todo App",
+                    "resume": "Agregar tareas para tu día a día.",
+                    "technologies": ["JavaScript", "ReactJS", "CSS", "HTML"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702600/Desktop_Result_2_iikers.png",
+                    "url": "https://frontendmentor-todo-app-three.vercel.app/",
+                    "repository": "https://github.com/juandavid015/Frontendmentor-todo-app",
+                    "button_visit": "Ver más"
+                },
+                {
+                    "title": "Advice Generator",
+                    "resume": "Traer frases aleatoreas desde una API externa.",
+                    "technologies": ["JavaScript", "CSS", "HTML"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702826/frontend-mentor-advice-generator-app-nine.vercel.app__Dektop_3_zfoflm.png",
+                    "url": "https://frontend-mentor-advice-generator-app-nine.vercel.app/",
+                    "repository": "https://github.com/juandavid015/FrontendMentor-AdviceGeneratorApp-",
+                    "button_visit": "Ver más"
+                },
+                {
+                    "title": "Expenses Chart",
+                    "resume": "Gráfico que muestra dinámicamente las estadísticas de una base de datos simulada.",
+                    "technologies": ["JavaScript", "CSS", "HTML"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702747/frontend-mentor-expenses-chart-component-omega.vercel.app__Dektop_3_umj4hu.png",
+                    "url": "https://frontend-mentor-expenses-chart-component-omega.vercel.app/",
+                    "repository": "https://github.com/juandavid015/Frontendementor-Expenses-Chart",
+                    "button_visit": "Ver más"
+                },
+                {
+                    "title": "Time tracking dashboard",
+                    "resume": "Dashboard para realizar un seguimiento del tiempo diario del usuario.",
+                    "technologies": ["JavaScript", "ReactJS", "CSS", "HTML"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702695/9e232870-3a88-4467-9202-326442deac2b_rheonr.png",
+                    "url": "https://frontend-mentor-time-tracking-dashboard-nine.vercel.app/",
+                    "repository": "https://github.com/juandavid015/FrontendMentor-time-tracking-dashboard",
+                    "button_visit": "Ver más"
+                }
+            ]
+        }
+    },
+    "contact": {
+        "title": "Contacto",
+        "description": "Puedes contactar conmigo escribiendo directamente a mi email juandavidgr1002@gmail.com",
+        "extra": {
+            "title": "O encuentrame en"
+        },
+        "form": {
+            "name": {
+                "title": "Nombre",
+                "placeholder": "Nombre"
+            },
+            "email": {
+                "title": "Email",
+                "placeholder": "Email"
+            },
+            "message": {
+                "title": "Mensaje",
+                "placeholder": "Deja tu mensaje..."
+            },
+            "submit": {
+                "title": "Enviar mensaje"
+            }
+        }
+    }
+}
