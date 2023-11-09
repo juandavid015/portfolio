@@ -7,7 +7,7 @@ export const mainProjects = [
       es: 'Aplicación de colaboración para la gestión de proyectos. Organice, agregue, asigne y elimine tareas del proyecto.'
     },
     technologies: ['Typescript', 'ReactJS', 'Express JS', 'NodeJS', 'Mongodb', 'Graphql', 'Prisma', 'Apollo', 'Websocket', 'Auth0', 'HTML', 'TailwindCSS'],
-    mainBackgroundImage: 'https://res.cloudinary.com/dut4cwhtd/image/upload/v1695400314/softlink.vercel.app_projects_Desktop_3_1_lav0s6.png',
+    mainBackgroundImage: 'https://res.cloudinary.com/dut4cwhtd/image/upload/v1699561284/Softlink_landing-w_vtyvpc.webp',
     otherPreviewImages: [],
     url: 'https://softlink.vercel.app/',
     repository: 'https://github.com/juandavid015/X-Project-Management'
