@@ -27,7 +27,7 @@
                     "title": "Soflink - Project management platform'",
                     "description": "Aplicación de colaboración para la gestión de proyectos. Organice, agregue, asigne y elimine tareas del proyecto.",
                     "technologies": ["Typescript", "ReactJS", "Express JS", "NodeJS", "Mongodb", "Graphql", "Prisma", "Apollo", "Websocket", "Auth0", "HTML", "TailwindCSS"],
-                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1695400314/softlink.vercel.app_projects_Desktop_3_1_lav0s6.png",
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1699561284/Softlink_landing-w_vtyvpc.webp",
                     "url": "https://softlink.vercel.app/",
                     "repository": "https://github.com/juandavid015/X-Project-Management",
                     "button_visit": "Ver proyecto"
@@ -36,7 +36,7 @@
                     "title": "Zero Two - Anime page",
                     "description": "Administrar los datos traídos desde una API externa (API Kitsu). Algunas características: proceso y funcionalidad para autenticación y autorización con terceros (iniciar sesión y registrarse); agregar a la lista y cambiar la configuración del usuario; filtrado, clasificación y búsqueda de la lista de animes; interacción de comentarios en los episodios de anime.",
                     "technologies": ["Typescript", "ReactJS", "Express JS", "NodeJS", "PostgreSQL", "Sequelize", "Redux", "HTML", "CSS"],
-                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1695400154/zerotwo-deploy.vercel.app_home_Desktop_3_qdzjjr.png",
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1699562294/zerotwo_anime_page_diptaz.webp",
                     "url": "https://zerotwo-deploy.vercel.app/",
                     "repository": "https://github.com/juandavid015/zerotwo-deploy",
                     "button_visit": "Ver proyecto"

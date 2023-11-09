@@ -1,10 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import React from 'react'
 import { Locale, i18n } from '../../i18n-config'
-
-const inter = Inter({ subsets: ['latin'] })
+import { anekKannada } from '../fonts'
 
 export const metadata: Metadata = {
   title: 'juandgr: Web Developer',
@@ -27,7 +25,7 @@ export default function RootLayout ({
 }) {
   return (
     <html lang={params.lang} className='scroll-smooth' style={{ scrollBehavior: 'smooth' }}>
-      <body className={inter.className}>{children}</body>
+      <body className={`${anekKannada.variable} font-sans`}>{children}</body>
     </html>
   )
 }

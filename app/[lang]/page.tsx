@@ -11,17 +11,22 @@ import { Locale } from '../../i18n-config'
 
 // eslint-disable-next-line camelcase
 
-const IndexPage = async ({ params: { lang } }: {params: {lang: Locale}}) => {
+const IndexPage = async ({ params: { lang } }: { params: { lang: Locale } }) => {
   return (
     // eslint-disable-next-line camelcase
-    <main className={`${anekKannada.variable} font-sans`}>
+    <>
       <Header lang={lang} />
-      <About lang={lang} />
-      <Skills lang={lang} />
-      <Projects lang={lang} />
-      <Other lang={lang} />
+      <main className={`${anekKannada.variable} font-sans`}>
+
+        <About lang={lang} />
+        <Skills lang={lang} />
+        <Projects lang={lang} />
+        <Other lang={lang} />
+
+      </main>
       <Footer lang={lang} />
-    </main>
+    </>
+
   )
 }
 
