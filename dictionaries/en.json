@@ -11,7 +11,7 @@
     "about": {
         "title": "About me",
         "description": {
-            "paragraph1": "I'm based in Colombia and started my road as a programmer since 2022 as an autodidact. From there, my curiosity and passion for this career have been growing each day.Currently i’ve been working with front end and back end technologies building somethings for the web",
+            "paragraph1": "I'm based in Colombia and started my road as a programmer since 2022 as an autodidact. From there, my curiosity and passion for this career have been growing each day. Currently i’ve been working with front end and back end technologies building somethings for the web",
             "paragraph2": "Also, i'm a person who: likes continuous learning, dedicated, oriented to details and with good analytical ability. Right now and for the future: i want to learn/practice more about design as an extra for my web skills improvement."
         }
     },
@@ -65,21 +65,30 @@
                     "button_visit": "See more"
                 },
                 {
-                    "title": "Expenses Chart",
-                    "resume": "Chart showing dynamically statistics of a simulated database",
-                    "technologies": ["JavaScript", "CSS", "HTML"],
-                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702747/frontend-mentor-expenses-chart-component-omega.vercel.app__Dektop_3_umj4hu.png",
-                    "url": "https://frontend-mentor-expenses-chart-component-omega.vercel.app/",
-                    "repository": "https://github.com/juandavid015/Frontendementor-Expenses-Chart",
+                    "title": "U-buy - Ecommerce Web design",
+                    "resume": "This is a partial full design page application for an e-commerce concept. ",
+                    "technologies": ["Typescript","ReactJS", "TailwindCSS", "HTML"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1701208938/u-buy.vercel.app__Desktop_ha68ha.webp",
+                    "url": "https://u-buy.vercel.app/",
+                    "repository": "https://github.com/juandavid015/e-commerce-cms",
                     "button_visit": "See more"
                 },
                 {
-                    "title": "Time tracking dashboard",
-                    "resume": "Dashboard to track the user’s daily time.",
+                    "title": "Analyze and generate images with AI",
+                    "resume": "Basic and small web application for generating and analyzing images by using OpenAI Dall-3 and Azure image analyzis 4.0 models.",
+                    "technologies": ["JavaScript", "CSS", "HTML", "ReactJS", "Azure", "OpenAI"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1701180225/blue-dune-060d6150f.4.azurestaticapps.net__Desktop_l4hd5v.webp",
+                    "url": "https://blue-dune-060d6150f.4.azurestaticapps.net/",
+                    "repository": "https://github.com/juandavid015/analyze-and-generate-images-with-Azure-AI",
+                    "button_visit": "See more"
+                },
+                {
+                    "title": "Room home page design",
+                    "resume": "Design of room home page. Only structure and design. No interactivity.",
                     "technologies": ["JavaScript", "ReactJS", "CSS", "HTML"],
-                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702695/9e232870-3a88-4467-9202-326442deac2b_rheonr.png",
-                    "url": "https://frontend-mentor-time-tracking-dashboard-nine.vercel.app/",
-                    "repository": "https://github.com/juandavid015/FrontendMentor-time-tracking-dashboard",
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1701180225/room-home-page-eight.vercel.app__Desktop_lqnbwg.webp",
+                    "url": "https://room-home-page-eight.vercel.app/",
+                    "repository": "https://github.com/juandavid015/room-home-page-frontendmentor",
                     "button_visit": "See more"
                 }
             ]

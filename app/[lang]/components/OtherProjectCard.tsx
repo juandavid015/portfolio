@@ -16,7 +16,7 @@ const OtherProjectCard = ({ project }: OtherProjectCardProps) => {
     >
       <Link
         className='w-fit hover:-translate-y-0.5 transition-all hover:fill-blue-white fill-purple-blue'
-        href={project.repository}
+        href={project.repository} target='_blank'
       >
         <GithubIcon
           className='h-[20px]'
@@ -28,7 +28,7 @@ const OtherProjectCard = ({ project }: OtherProjectCardProps) => {
       <p>
         {project.resume}
       </p>
-      <ul className='flex gap-2'>
+      <ul className='flex flex-wrap gap-2'>
         {
             project.technologies.map((tech, index) => {
               return (
