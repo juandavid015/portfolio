@@ -8,24 +8,25 @@ const About = async ({ lang }: { lang: Locale }) => {
     <section
       id='about'
       aria-label='About'
-      className='w-full flex justify-center sm:p-16 p-8'
+      className='w-full flex justify-center sm:px-16 px-8 '
     >
-      <div className={`max-w-[1048px] w-full
-      flex md:flex-nowrap flex-wrap gap-8`}
+      <div className={`max-w-[1200px] w-full
+      flex md:flex-nowrap flex-wrap gap-8 border border-gray p-8
+      border-b-0`}
       >
-        <div>
-          <h2 className='md:text-5xl text-3xl font-bold text-iris'>
+        <div className='flex flex-col gap-4'>
+          <h2 className='md:text-5xl text-3xl font-bold text-black'>
             {about.title}
           </h2>
-          <p className='text-iris'>
+          <p className='text-black'>
             {about.description.paragraph1}
           </p>
-          <br />
-          <p className='text-iris'>
+          {/* <br /> */}
+          <p className='text-black'>
             {about.description.paragraph2}
           </p>
         </div>
-        <div className='m-auto relative fill-green-yellow md:min-w-[300px] w-[200px] md:min-h-[300px] h-[100px]'>
+        <div className='m-auto relative fill-iris md:min-w-[300px] w-[200px] md:min-h-[300px] h-[100px]'>
           <ScreenDevIcon
             className='md:h-[60px] h-[30px] absolute'
           />

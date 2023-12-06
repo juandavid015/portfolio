@@ -2,7 +2,7 @@
     "header": {
         "nav_links": ["Acerca", "Habilidades", "Proyectos", "Contacto"],
         "title": "Desarrollador Web",
-        "subtitle": "Hola! Mi nombre es Juan,",
+        "subtitle": "Hola! Soy Juan,",
         "description": "Me gusta crear soluciones atractivas, estructuradas y bien comunicadas para todo tipo de usuarios web.",
         "cv": {
             "title": "Descargar CV"
@@ -47,15 +47,6 @@
             "title": "Otros",
             "projects": [
                 {
-                    "title": "Todo App",
-                    "resume": "Agregar tareas para tu día a día.",
-                    "technologies": ["JavaScript", "ReactJS", "CSS", "HTML"],
-                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702600/Desktop_Result_2_iikers.png",
-                    "url": "https://frontendmentor-todo-app-three.vercel.app/",
-                    "repository": "https://github.com/juandavid015/Frontendmentor-todo-app",
-                    "button_visit": "Ver más"
-                },
-                {
                     "title": "U-buy - Ecommerce Web design",
                     "resume": "Esta es una aplicación de página de diseño completo parcial para un concepto de comercio electrónico.",
                     "technologies": ["Typescript","ReactJS", "TailwindCSS", "HTML"],
@@ -80,6 +71,15 @@
                     "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1701180225/room-home-page-eight.vercel.app__Desktop_lqnbwg.webp",
                     "url": "https://room-home-page-eight.vercel.app/",
                     "repository": "https://github.com/juandavid015/room-home-page-frontendmentor",
+                    "button_visit": "Ver más"
+                },
+                {
+                    "title": "Todo App",
+                    "resume": "Agregar tareas para tu día a día.",
+                    "technologies": ["JavaScript", "ReactJS", "CSS", "HTML"],
+                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702600/Desktop_Result_2_iikers.png",
+                    "url": "https://frontendmentor-todo-app-three.vercel.app/",
+                    "repository": "https://github.com/juandavid015/Frontendmentor-todo-app",
                     "button_visit": "Ver más"
                 }
             ]

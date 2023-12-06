@@ -7,14 +7,14 @@ const NavSocials = async ({ lang }: { lang: Locale }) => {
   const { header } = await getDictionary(lang)
   return (
     <nav className='flex flex-wrap gap-8'>
-      <ul className='flex  gap-8 items-center text-blue-white'>
+      <ul className='flex  gap-8 items-center text-purple-blue'>
         <span className='border-purple-blue/50 border-r pr-2'>
           Socials
         </span>
         <li className=''>
           <Link
             className='flex gap-2
-                hover:text-green-yellow hover:fill-green-yellow fill-blue-white font-bold
+                hover:text-iris hover:fill-iris fill-purple-blue font-bold
                 hover:-translate-y-0.5 transition-all'
             href='https://www.linkedin.com/in/juan-dgr/'
             target='_blank'
@@ -30,7 +30,7 @@ const NavSocials = async ({ lang }: { lang: Locale }) => {
         <li className=''>
           <Link
             className='flex gap-2
-                hover:text-green-yellow hover:fill-green-yellow fill-blue-white font-bold
+                hover:text-iris hover:fill-iris fill-purple-blue font-bold
                 hover:-translate-y-0.5 transition-all'
             href='https://github.com/juandavid015'
             target='_blank'
@@ -45,10 +45,12 @@ const NavSocials = async ({ lang }: { lang: Locale }) => {
         </li>
       </ul>
       <Link
-        className='px-8 py-3 bg-green-yellow font-bold
-            hover:text-blue-dark hover:fill-green-yellow fill-blue-white font-bold
+        className='px-8 py-3 bg-iris font-bold
+            hover:text-blue-dark hover:fill-white fill-white font-bold
             hover:-translate-y-0.5 transition-all
-            flex gap-2 items-center'
+            flex gap-2 items-center text-white
+            transition-all hover:bg-iris
+            hover:shadow-[4px_4px_0px_#6951FF] hover:shadow-none'
         href={lang === 'es' ? '/pdf/JUAN_GARZON_WEB_DEVELOPER_ES.pdf' : '/pdf/JUAN_GARZON_WEB_DEVELOPER_EN.pdf'}
         target='_blank'
         rel='noopener noreferrer'
@@ -57,7 +59,7 @@ const NavSocials = async ({ lang }: { lang: Locale }) => {
           {header.cv.title}
         </span>
         <DownloadIcon
-          className='fill-dark-blue h-[25px]'
+          className=' h-[25px]'
         />
       </Link>
     </nav>

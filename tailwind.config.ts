@@ -16,13 +16,17 @@ const config: Config = {
       },
       colors: {
         'green-yellow': '#CCF381',
-        'iris': '#4831D4',
+        'iris': '#6951FF',
         'purple-blue': '#8E8FFA',
         'blue-white': '#C2D9FF',
-        'dark-blue': '#11112D'
+        'dark-blue': '#11112D',
+        'white': '#FFFFFF',
+        'black': '#171717',
+        'gray': '#D4D4D4'
       },
       fontFamily: {
-        sans: ['var(--font-anek-kannada)']
+        sans: ['var(--font-anek-kannada)'],
+        heading: 'var(--font-raleway)'
       },
       screens: {
         md: '970px'

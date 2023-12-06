@@ -6,8 +6,8 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Other from './components/Other'
 import Footer from './components/Footer'
-import { anekKannada } from '../fonts'
 import { Locale } from '../../i18n-config'
+import NavPageSections from './components/NavSections'
 
 // eslint-disable-next-line camelcase
 
@@ -15,8 +15,9 @@ const IndexPage = async ({ params: { lang } }: { params: { lang: Locale } }) => 
   return (
     // eslint-disable-next-line camelcase
     <>
+      <NavPageSections lang={lang} />
       <Header lang={lang} />
-      <main className={`${anekKannada.variable} font-sans`}>
+      <main className='font-heading text-sm md:ml-[350px]'>
 
         <About lang={lang} />
         <Skills lang={lang} />

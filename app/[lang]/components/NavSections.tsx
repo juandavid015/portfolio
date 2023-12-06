@@ -16,8 +16,8 @@ const NavPageSections = ({ lang }: { lang: Locale }) => {
   return (
     <>
       <button
-        className='md:hidden fixed -right-[0] -top-[0] z-[1000]
-        block ml-auto w-[50px] h-[50px] bg-dark-blue
+        className='md:hidden fixed left-0 -top-[0] z-[1000]
+        block ml-auto w-[50px] h-[50px] bg-black
         text-white fill-white flex items-center justify-center '
         onClick={() => setIsExpanded(!isExpanded)}
       >
@@ -33,18 +33,18 @@ const NavPageSections = ({ lang }: { lang: Locale }) => {
 
       </button>
       <nav
-        className={`md:fixed md:top-0 md:left-0 z-[100] md:bg-transparent
-    px-8 md:w-full md:h-[56px] md:max-w-full overflow-hidden px-16
+        className={`fixed md:top-0 top-0 left-0 md:left-0 z-[100] 
+    md:w-full md:h-full  overflow-hidden bg-white/90 backdrop-blur
     fixed -right-[2rem] top-0 max-w-[300px] w-full h-full
     flex md:flex-row flex-col gap-12 md:gap-0
-    bg-green-yellow md:transition-none transition-all duration-1000 origin-top-right
+    md:transition-none transition-all duration-1000 origin-top-right
     md:opacity-100 md:visible
     ${!isExpanded && 'opacity-0 invisible'}`}
       >
 
-        <ul className='relative w-full md:h-full max-w-[1048px] md:m-auto
-          flex md:flex-row md:justify-between md:items-center bg-green-yellow
-          flex-col gap-6
+        <ul className='relative w-full md:h-full h-full max-w-[350px] p-8
+          flex md:flex-col  md:items-left text-black
+          flex-col gap-16 sm:text-xl text-sm
          '
         >
           <div className='relative h-[100px] w-full md:flex-1
@@ -70,7 +70,7 @@ const NavPageSections = ({ lang }: { lang: Locale }) => {
               newSections.map((section, index) => {
                 return (
                   <li
-                    className='font-bold opacity-80 sm:flex-1 sm:ml-0
+                    className='font-bold opacity-80  sm:ml-0
                     pl-8'
                     key={index}
                   >

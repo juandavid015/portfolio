@@ -8,21 +8,29 @@ const HeaderContent = async ({ lang }: { lang: Locale }) => {
     <div className='flex flex-wrap items-center gap-8 md:justify-between justify-center mt-16
     w-full h-full'
     >
-      <div className='max-w-[450px] flex flex-col gap-4 w-full'>
-        <h1 className='inline-flex flex-col leading-none'>
-          <span className='text-purple-blue md:text-6xl text-4xl font-bold'>
+      <div className='max-w-[650px] flex flex-col gap-8 w-full'>
+        <h1 className='inline-flex flex-col gap-4 leading-none'>
+          <span className='text-black md:text-6xl text-4xl font-bold'>
             {header.subtitle}
           </span>
-          <span className='text-green-yellow md:text-[64px] text-[46px] font-bold'>
+          <span className='text-black md:text-[84px] text-[46px] font-bold
+           relative z-[10] inline-flex w-fit
+           before:absolute before:top-[calc(100%-0.25rem)] before:left:0
+           before:h-[25px] before:w-full before:bg-iris'
+          >
             {header.title}
           </span>
         </h1>
-        <p className='text-green-yellow'>
+        <p className='text-black'>
           {header.description}
         </p>
       </div>
       <div className='relative max-w-[360px] w-[360px] max-h-[360px] h-[360px]
-          bg-dark-blue flex overflow-hidden '
+          bg-none flex bg-white
+          border-black border
+          before:absolute before:border before:border-black
+           before:top-[8px] before:left-[8px]
+          before:h-full before:w-full '
       >
         <Image
           alt='picture of portfolio owner'

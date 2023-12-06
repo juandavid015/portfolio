@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import React from 'react'
 import { Locale, i18n } from '../../i18n-config'
-import { anekKannada } from '../fonts'
+import { anekKannada, raleway } from '../fonts'
 
 export const metadata: Metadata = {
   title: 'juandgr: Web Developer',
@@ -25,7 +25,7 @@ export default function RootLayout ({
 }) {
   return (
     <html lang={params.lang} className='scroll-smooth' style={{ scrollBehavior: 'smooth' }}>
-      <body className={`${anekKannada.variable} font-sans`}>{children}</body>
+      <body className={`${anekKannada.variable} ${raleway.variable} font-heading`}>{children}</body>
     </html>
   )
 }

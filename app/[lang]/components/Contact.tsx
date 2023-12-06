@@ -9,7 +9,8 @@ const Contact = async ({ lang }: { lang: Locale }) => {
     <section
       id='contact'
       aria-label='Other'
-      className='w-full flex flex-wrap gap-8 max-w-[1048px]'
+      className='w-full flex flex-wrap gap-8 max-w-[1200px]
+      p-8 py-16 border border-gray mx-auto'
     >
       <form
         className='flex-1 w-full flex flex-col gap-8 max-w-[460px] w-[460px]'
@@ -25,11 +26,11 @@ const Contact = async ({ lang }: { lang: Locale }) => {
         </p>
         <label
           htmlFor='name'
-          className='p-4 border border-purple-blue w-full'
+          className='p-4 border border-iris w-full'
         >
           <input
-            className='bg-transparent outline-none w-full text-purple-blue
-            placeholder:text-purple-blue'
+            className='bg-transparent outline-none w-full text-iris
+            placeholder:text-iris'
             type='text'
             name='name'
             id='name'
@@ -38,11 +39,11 @@ const Contact = async ({ lang }: { lang: Locale }) => {
         </label>
         <label
           htmlFor='email'
-          className='p-4 border border-purple-blue w-full'
+          className='p-4 border border-iris w-full'
         >
           <input
-            className='bg-transparent outline-none w-full text-purple-blue
-            placeholder:text-purple-blue'
+            className='bg-transparent outline-none w-full text-iris
+            placeholder:text-iris'
             type='email'
             name='email'
             id='email'
@@ -52,11 +53,11 @@ const Contact = async ({ lang }: { lang: Locale }) => {
         </label>
         <label
           htmlFor='message'
-          className='p-4 border border-purple-blue w-full'
+          className='p-4 border border-iris w-full'
         >
           <textarea
-            className='bg-transparent outline-none resize-none w-fit text-purple-blue w-full
-            placeholder:text-purple-blue'
+            className='bg-transparent outline-none resize-none w-fit text-iris w-full
+            placeholder:text-iris'
             name='message'
             id='message'
             placeholder={contact.form.message.placeholder}
@@ -66,8 +67,9 @@ const Contact = async ({ lang }: { lang: Locale }) => {
         </label>
         <button
           type='submit'
-          className='text-dark-blue font-bold py-3 px-8 bg-purple-blue w-fit
-          hover:-translate-y-0.5 transition-all hover:bg-blue-white'
+          className='text-white font-bold py-3 px-8 bg-iris w-fit
+          transition-all hover:bg-iris hover:translate-y-0.5
+          hover:shadow-[4px_4px_0px_#6951FF] hover:shadow-none'
         >
           {contact.form.submit.title}
         </button>
@@ -82,7 +84,7 @@ const Contact = async ({ lang }: { lang: Locale }) => {
           <li className=''>
             <Link
               className='flex gap-2
-                hover:text-blue-white hover:fill-blue-white fill-purple-blue font-bold
+                hover:text-iris hover:fill-iris fill-iris font-bold
                 hover:-translate-y-0.5 transition-all'
               href='https://www.linkedin.com/in/juan-dgr/'
               target='_blank'
@@ -98,7 +100,7 @@ const Contact = async ({ lang }: { lang: Locale }) => {
           <li className=''>
             <Link
               className='flex gap-2
-                hover:text-blue-white hover:fill-blue-white fill-purple-blue font-bold
+                hover:text-iris hover:fill-iris fill-iris font-bold
                 hover:-translate-y-0.5 transition-all'
               href='https://github.com/juandavid015'
               target='_blank'
