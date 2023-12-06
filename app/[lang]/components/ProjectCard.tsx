@@ -81,7 +81,7 @@ const ProejectCard = ({ project, index }: ProjectCardProps) => {
               hover:text-white fill-white font-bold
               hover:-translate-y-0.5
               transition-all hover:bg-iris
-              hover:shadow-[4px_4px_0px_#6951FF] hover:shadow-none'
+              hover:shadow-[4px_4px_0px_#6951FF]'
               href={project.url}
               target='_blank'
             >

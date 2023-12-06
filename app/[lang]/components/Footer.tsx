@@ -7,7 +7,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
   return (
     <footer className='bg-white
         flex flex-col gap-16 items-center text-black
-        md:ml-[350px] mr-auto
+        md:ml-[300px] mr-auto
         sm:px-16 px-8'
     >
       <Contact lang={lang} />

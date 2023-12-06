@@ -10,7 +10,7 @@ import { Locale } from '../../../i18n-config'
 const Header = ({ lang }: { lang: Locale }) => {
   return (
     <header className='bg-white min-h-[70vh] relative
-    flex flex-col items-center sm:p-16 p-8 font-heading md:ml-[350px]'
+    flex flex-col items-center sm:p-16 p-8 font-heading md:ml-[300px]'
 
     >
       <div

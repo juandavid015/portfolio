@@ -69,7 +69,7 @@ const OtherProjectCard = ({ project }: OtherProjectCardProps) => {
         fill-white text-white font-bold
         px-8 py-3 bg-iris flex gap-2 w-fit
         transition-all hover:bg-iris
-        hover:shadow-[4px_4px_0px_#6951FF] hover:shadow-none
+        hover:shadow-[4px_4px_0px_#6951FF]
         font-bold
         '
         href={project.url}

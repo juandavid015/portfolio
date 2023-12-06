@@ -47,10 +47,10 @@ const NavSocials = async ({ lang }: { lang: Locale }) => {
       <Link
         className='px-8 py-3 bg-iris font-bold
             hover:text-blue-dark hover:fill-white fill-white font-bold
-            hover:-translate-y-0.5 transition-all
+            hover:-translate-y-0.5
             flex gap-2 items-center text-white
             transition-all hover:bg-iris
-            hover:shadow-[4px_4px_0px_#6951FF] hover:shadow-none'
+            hover:shadow-[4px_4px_0px_#6951FF] '
         href={lang === 'es' ? '/pdf/JUAN_GARZON_WEB_DEVELOPER_ES.pdf' : '/pdf/JUAN_GARZON_WEB_DEVELOPER_EN.pdf'}
         target='_blank'
         rel='noopener noreferrer'

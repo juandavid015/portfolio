@@ -42,7 +42,7 @@ const NavPageSections = ({ lang }: { lang: Locale }) => {
     ${!isExpanded && 'opacity-0 invisible'}`}
       >
 
-        <ul className='relative w-full md:h-full h-full max-w-[350px] p-8
+        <ul className='relative w-full md:h-full h-full max-w-[300px] p-8
           flex md:flex-col  md:items-left text-black
           flex-col gap-16 sm:text-xl text-sm
          '

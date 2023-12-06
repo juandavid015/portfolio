@@ -69,7 +69,7 @@ const Contact = async ({ lang }: { lang: Locale }) => {
           type='submit'
           className='text-white font-bold py-3 px-8 bg-iris w-fit
           transition-all hover:bg-iris hover:translate-y-0.5
-          hover:shadow-[4px_4px_0px_#6951FF] hover:shadow-none'
+          hover:shadow-[4px_4px_0px_#6951FF]'
         >
           {contact.form.submit.title}
         </button>
