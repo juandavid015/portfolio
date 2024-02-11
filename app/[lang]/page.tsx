@@ -17,7 +17,7 @@ const IndexPage = async ({ params: { lang } }: { params: { lang: Locale } }) => 
     <>
       <NavPageSections lang={lang} />
       <Header lang={lang} />
-      <main className='font-heading text-sm md:ml-[300px]'>
+      <main className='font-heading text-lg md:ml-[300px]'>
 
         <About lang={lang} />
         <Skills lang={lang} />

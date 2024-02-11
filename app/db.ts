@@ -109,8 +109,8 @@ export const otherProjects = [
 ]
 
 export const techs = {
-  core: ['Typescript', 'ReactJS', 'Javascript', 'ExpressJS'],
+  core: ['Typescript', 'ReactJS', 'Javascript', 'NextJS', 'ExpressJS'],
   other: ['NodeJS', 'Mongodb', 'PostgreSQL', 'Sequelize', 'Graphql',
-    'Redux', 'Tailwind', 'CSS', 'HTML'],
+    'Redux', 'Tailwind', 'CSS', 'HTML', 'CI/CD', 'Git', 'Azure'],
   future: ['Figma']
 }

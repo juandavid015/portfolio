@@ -18,16 +18,9 @@ const Contact = async ({ lang }: { lang: Locale }) => {
         action='https://formsubmit.co/juandavidgr1002@gmail.com'
         method='POST'
       >
-        <h2 className='md:text-5xl text-3xl font-bold'>
-          {contact.title}
-        </h2>
-        <p>
-          {contact.description}
-        </p>
-        <label
-          htmlFor='name'
-          className='p-4 border border-iris w-full'
-        >
+        <h2 className='md:text-5xl text-3xl font-bold'>{contact.title}</h2>
+        <p>{contact.description}</p>
+        <label htmlFor='name' className='p-4 border-b border-iris w-full'>
           <input
             className='bg-transparent outline-none w-full text-iris
             placeholder:text-iris'
@@ -37,10 +30,7 @@ const Contact = async ({ lang }: { lang: Locale }) => {
             placeholder={contact.form.name.placeholder}
           />
         </label>
-        <label
-          htmlFor='email'
-          className='p-4 border border-iris w-full'
-        >
+        <label htmlFor='email' className='p-4 border-b border-iris w-full'>
           <input
             className='bg-transparent outline-none w-full text-iris
             placeholder:text-iris'
@@ -51,10 +41,7 @@ const Contact = async ({ lang }: { lang: Locale }) => {
             required
           />
         </label>
-        <label
-          htmlFor='message'
-          className='p-4 border border-iris w-full'
-        >
+        <label htmlFor='message' className='p-4 border-b border-iris w-full'>
           <textarea
             className='bg-transparent outline-none resize-none w-fit text-iris w-full
             placeholder:text-iris'
@@ -74,9 +61,7 @@ const Contact = async ({ lang }: { lang: Locale }) => {
           {contact.form.submit.title}
         </button>
       </form>
-      <div
-        className='flex-1 flex flex-col gap-8 '
-      >
+      <div className='flex-1 flex flex-col gap-8 '>
         <h2 className='md:text-5xl text-3xl font-bold'>
           {contact.extra.title}
         </h2>
@@ -89,12 +74,8 @@ const Contact = async ({ lang }: { lang: Locale }) => {
               href='https://www.linkedin.com/in/juan-dgr/'
               target='_blank'
             >
-              <span>
-                Linkedin
-              </span>
-              <LinkedinIcon
-                className='h-[20px]'
-              />
+              <span>Linkedin</span>
+              <LinkedinIcon className='h-[20px]' />
             </Link>
           </li>
           <li className=''>
@@ -105,12 +86,8 @@ const Contact = async ({ lang }: { lang: Locale }) => {
               href='https://github.com/juandavid015'
               target='_blank'
             >
-              <span>
-                Github
-              </span>
-              <GithubIcon
-                className='h-[20px]'
-              />
+              <span>Github</span>
+              <GithubIcon className='h-[20px]' />
             </Link>
           </li>
         </ul>
