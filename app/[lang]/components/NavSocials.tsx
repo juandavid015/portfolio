@@ -8,9 +8,7 @@ const NavSocials = async ({ lang }: { lang: Locale }) => {
   return (
     <nav className='flex flex-wrap gap-8'>
       <ul className='flex  gap-8 items-center text-purple-blue'>
-        <span className='border-purple-blue/50 border-r pr-2'>
-          Socials
-        </span>
+        <span className='border-purple-blue/50 border-r pr-2'>Socials</span>
         <li className=''>
           <Link
             className='flex gap-2
@@ -19,12 +17,8 @@ const NavSocials = async ({ lang }: { lang: Locale }) => {
             href='https://www.linkedin.com/in/juan-dgr/'
             target='_blank'
           >
-            <span>
-              Linkedin
-            </span>
-            <LinkedinIcon
-              className='h-[20px]'
-            />
+            <span>Linkedin</span>
+            <LinkedinIcon className='h-[20px]' />
           </Link>
         </li>
         <li className=''>
@@ -35,12 +29,8 @@ const NavSocials = async ({ lang }: { lang: Locale }) => {
             href='https://github.com/juandavid015'
             target='_blank'
           >
-            <span>
-              Github
-            </span>
-            <GithubIcon
-              className='h-[20px]'
-            />
+            <span>Github</span>
+            <GithubIcon className='h-[20px]' />
           </Link>
         </li>
       </ul>
@@ -51,16 +41,16 @@ const NavSocials = async ({ lang }: { lang: Locale }) => {
             flex gap-2 items-center text-white
             transition-all hover:bg-iris
             hover:shadow-[4px_4px_0px_#6951FF] '
-        href={lang === 'es' ? '/pdf/JUAN_GARZON_WEB_DEVELOPER_ES.pdf' : '/pdf/JUAN_GARZON_WEB_DEVELOPER_EN.pdf'}
+        href={
+          lang === 'es'
+            ? '/pdf/JUAN_GARZON_WEB_DEVELOPER_ES.pdf'
+            : '/pdf/JUAN_GARZON_WEB_DEVELOPER_EN.pdf'
+        }
         target='_blank'
         rel='noopener noreferrer'
       >
-        <span>
-          {header.cv.title}
-        </span>
-        <DownloadIcon
-          className=' h-[25px]'
-        />
+        <span>{header.cv.title}</span>
+        <DownloadIcon className=' h-[25px]' />
       </Link>
     </nav>
   )

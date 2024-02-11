@@ -1,112 +1,158 @@
 {
-    "header": {
-        "nav_links": ["Acerca", "Habilidades", "Proyectos", "Contacto"],
-        "title": "Desarrollador Web",
-        "subtitle": "Hola! Soy Juan,",
-        "description": "Me gusta crear soluciones atractivas, estructuradas y bien comunicadas para todo tipo de usuarios web.",
-        "cv": {
-            "title": "Descargar CV"
-        }
-    },
-    "about": {
-        "title": "Acerca de mí",
-        "description": {
-            "paragraph1": "Resido en Colombia y comencé mi camino como programador a partir de 2022 de forma autodidacta. A partir de ahí, mi curiosidad y pasión por esta area han ido creciendo cada día. He estado trabajando con tecnologías tanto frontend como backend, desarrollando algunas aplicaciones para la web. ",
-            "paragraph2": "También, soy una persona a la que: le gusta el aprendizaje continuo, dedicada, orientada a los detalles y con buena capacidad analítica. Ahora mismo y a futro: quiero aprender/practicar más sobre diseño como un extra para mejorar mis habilidades en el desarrollo web."
-        }
-    },
-    "skills": {
-        "title:": "Mis habilidades",
-        "description": ""
-    },
-    "work": {
-        "main": {
-            "title": "Proyectos",
-            "projects": [
-                {
-                    "title": "Soflink - Project management platform'",
-                    "description": "Aplicación de colaboración para la gestión de proyectos. Organice, agregue, asigne y elimine tareas del proyecto.",
-                    "technologies": ["Typescript", "ReactJS", "Express JS", "NodeJS", "Mongodb", "Graphql", "Prisma", "Apollo", "Websocket", "Auth0", "HTML", "TailwindCSS"],
-                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1699561284/Softlink_landing-w_vtyvpc.webp",
-                    "url": "https://softlink.vercel.app/",
-                    "repository": "https://github.com/juandavid015/X-Project-Management",
-                    "button_visit": "Ver proyecto"
-                },
-                {
-                    "title": "Zero Two - Anime page",
-                    "description": "Administrar los datos traídos desde una API externa (API Kitsu). Algunas características: proceso y funcionalidad para autenticación y autorización con terceros (iniciar sesión y registrarse); agregar a la lista y cambiar la configuración del usuario; filtrado, clasificación y búsqueda de la lista de animes; interacción de comentarios en los episodios de anime.",
-                    "technologies": ["Typescript", "ReactJS", "Express JS", "NodeJS", "PostgreSQL", "Sequelize", "Redux", "HTML", "CSS"],
-                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1699562294/zerotwo_anime_page_diptaz.webp",
-                    "url": "https://zerotwo-deploy.vercel.app/",
-                    "repository": "https://github.com/juandavid015/zerotwo-deploy",
-                    "button_visit": "Ver proyecto"
-                }
-            ]
-        },
-        "other": {
-            "title": "Otros",
-            "projects": [
-                {
-                    "title": "U-buy - Ecommerce Web design",
-                    "resume": "Esta es una aplicación de página de diseño completo parcial para un concepto de comercio electrónico.",
-                    "technologies": ["Typescript","ReactJS", "TailwindCSS", "HTML"],
-                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1701208938/u-buy.vercel.app__Desktop_ha68ha.webp",
-                    "url": "https://u-buy.vercel.app/",
-                    "repository": "https://github.com/juandavid015/e-commerce-cms",
-                    "button_visit": "Ver más"
-                },
-                {
-                    "title": "Analyze and generate images with AI",
-                    "resume": "Aplicación web básica y pequeña para generar y analizar imágenes mediante el uso de OpenAI Dall-3 y Azure image analyzis 4.0.",
-                    "technologies": ["JavaScript", "CSS", "HTML", "ReactJS", "Azure", "OpenAI"],
-                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1701180225/blue-dune-060d6150f.4.azurestaticapps.net__Desktop_l4hd5v.webp",
-                    "url": "https://blue-dune-060d6150f.4.azurestaticapps.net/",
-                    "repository": "https://github.com/juandavid015/analyze-and-generate-images-with-Azure-AI",
-                    "button_visit": "Ver más"
-                },
-                {
-                    "title": "Room home page design",
-                    "resume": "Diseño de la home page 'Room' de Frontend Mentor. Solo estructura y estilos. ",
-                    "technologies": ["JavaScript", "ReactJS", "CSS", "HTML"],
-                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1701180225/room-home-page-eight.vercel.app__Desktop_lqnbwg.webp",
-                    "url": "https://room-home-page-eight.vercel.app/",
-                    "repository": "https://github.com/juandavid015/room-home-page-frontendmentor",
-                    "button_visit": "Ver más"
-                },
-                {
-                    "title": "Todo App",
-                    "resume": "Agregar tareas para tu día a día.",
-                    "technologies": ["JavaScript", "ReactJS", "CSS", "HTML"],
-                    "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702600/Desktop_Result_2_iikers.png",
-                    "url": "https://frontendmentor-todo-app-three.vercel.app/",
-                    "repository": "https://github.com/juandavid015/Frontendmentor-todo-app",
-                    "button_visit": "Ver más"
-                }
-            ]
-        }
-    },
-    "contact": {
-        "title": "Contacto",
-        "description": "Puedes contactar conmigo escribiendo directamente a mi email juandavidgr1002@gmail.com",
-        "extra": {
-            "title": "O encuentrame en"
-        },
-        "form": {
-            "name": {
-                "title": "Nombre",
-                "placeholder": "Nombre"
-            },
-            "email": {
-                "title": "Email",
-                "placeholder": "Email"
-            },
-            "message": {
-                "title": "Mensaje",
-                "placeholder": "Deja tu mensaje..."
-            },
-            "submit": {
-                "title": "Enviar mensaje"
-            }
-        }
+  "header": {
+    "nav_links": ["Acerca", "Habilidades", "Proyectos", "Contacto"],
+    "title": "Desarrollador Web",
+    "subtitle": "Hola! Soy Juan,",
+    "description": "Me gusta crear soluciones atractivas, estructuradas y bien comunicadas para todo tipo de usuarios web.",
+    "cv": {
+      "title": "Descargar CV"
     }
+  },
+  "about": {
+    "title": "Acerca de mí",
+    "description": {
+      "paragraph1": "Mi biografía y temás de interés.",
+      "paragraph2": "Resido en Colombia y comencé mi camino como programador a partir de 2022 de forma autodidacta. A partir de ahí, mi curiosidad y pasión por esta area han ido creciendo cada día. He estado trabajando con tecnologías tanto frontend como backend, desarrollando algunas aplicaciones para la web. ",
+      "paragraph3": "También, soy una persona a la que: le gusta el aprendizaje continuo, dedicada, orientada a los detalles y con buena capacidad analítica. Ahora mismo y a futro: quiero aprender/practicar más sobre diseño como un extra para mejorar mis habilidades en el desarrollo web."
+    },
+    "relatedContent": [
+      {
+        "title": "Location",
+        "content": "Colombia"
+      },
+      {
+        "title": "Interests",
+        "content": "Front-end development, UX/UI, Web performance"
+      },
+      {
+        "title": "Email",
+        "content": "juandavidgr1002@gmail.com"
+      }
+    ]
+  },
+  "skills": {
+    "title:": "Habilidades y tecnologías",
+    "description": "Algunas de las tecnologías con las que he estado trabajando:"
+  },
+  "work": {
+    "main": {
+      "title": "Proyectos",
+      "description": "Algunos de mis proyectos destacados. Proyectos fullstack.",
+      "projects": [
+        {
+          "title": "Soflink - Project management platform'",
+          "description": "Aplicación de colaboración para la gestión de proyectos. Organice, agregue, asigne y elimine tareas del proyecto.",
+          "technologies": [
+            "Typescript",
+            "ReactJS",
+            "Express JS",
+            "NodeJS",
+            "Mongodb",
+            "Graphql",
+            "Prisma",
+            "Apollo",
+            "Websocket",
+            "Auth0",
+            "HTML",
+            "TailwindCSS"
+          ],
+          "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1699561284/Softlink_landing-w_vtyvpc.webp",
+          "url": "https://softlink.vercel.app/",
+          "repository": "https://github.com/juandavid015/X-Project-Management",
+          "button_visit": "Ver proyecto"
+        },
+        {
+          "title": "Zero Two - Anime page",
+          "description": "Administrar los datos traídos desde una API externa (API Kitsu). Algunas características: proceso y funcionalidad para autenticación y autorización con terceros (iniciar sesión y registrarse); agregar a la lista y cambiar la configuración del usuario; filtrado, clasificación y búsqueda de la lista de animes; interacción de comentarios en los episodios de anime.",
+          "technologies": [
+            "Typescript",
+            "ReactJS",
+            "Express JS",
+            "NodeJS",
+            "PostgreSQL",
+            "Sequelize",
+            "Redux",
+            "HTML",
+            "CSS"
+          ],
+          "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1699562294/zerotwo_anime_page_diptaz.webp",
+          "url": "https://zerotwo-deploy.vercel.app/",
+          "repository": "https://github.com/juandavid015/zerotwo-deploy",
+          "button_visit": "Ver proyecto"
+        }
+      ]
+    },
+    "other": {
+      "title": "Otros",
+      "projects": [
+        {
+          "title": "U-buy - Ecommerce Web design",
+          "resume": "Esta es una aplicación de página de diseño completo parcial para un concepto de comercio electrónico.",
+          "technologies": ["Typescript", "ReactJS", "TailwindCSS", "HTML"],
+          "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1701208938/u-buy.vercel.app__Desktop_ha68ha.webp",
+          "url": "https://u-buy.vercel.app/",
+          "repository": "https://github.com/juandavid015/e-commerce-cms",
+          "button_visit": "Ver más"
+        },
+        {
+          "title": "Analyze and generate images with AI",
+          "resume": "Aplicación web básica y pequeña para generar y analizar imágenes mediante el uso de OpenAI Dall-3 y Azure image analyzis 4.0.",
+          "technologies": [
+            "JavaScript",
+            "CSS",
+            "HTML",
+            "ReactJS",
+            "Azure",
+            "OpenAI"
+          ],
+          "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1701180225/blue-dune-060d6150f.4.azurestaticapps.net__Desktop_l4hd5v.webp",
+          "url": "https://blue-dune-060d6150f.4.azurestaticapps.net/",
+          "repository": "https://github.com/juandavid015/analyze-and-generate-images-with-Azure-AI",
+          "button_visit": "Ver más"
+        },
+        {
+          "title": "Room home page design",
+          "resume": "Diseño de la home page 'Room' de Frontend Mentor. Solo estructura y estilos. ",
+          "technologies": ["JavaScript", "ReactJS", "CSS", "HTML"],
+          "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1701180225/room-home-page-eight.vercel.app__Desktop_lqnbwg.webp",
+          "url": "https://room-home-page-eight.vercel.app/",
+          "repository": "https://github.com/juandavid015/room-home-page-frontendmentor",
+          "button_visit": "Ver más"
+        },
+        {
+          "title": "Todo App",
+          "resume": "Agregar tareas para tu día a día.",
+          "technologies": ["JavaScript", "ReactJS", "CSS", "HTML"],
+          "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702600/Desktop_Result_2_iikers.png",
+          "url": "https://frontendmentor-todo-app-three.vercel.app/",
+          "repository": "https://github.com/juandavid015/Frontendmentor-todo-app",
+          "button_visit": "Ver más"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Puedes contactar conmigo escribiendo directamente a mi email juandavidgr1002@gmail.com",
+    "extra": {
+      "title": "O encuentrame en"
+    },
+    "form": {
+      "name": {
+        "title": "Nombre",
+        "placeholder": "Nombre"
+      },
+      "email": {
+        "title": "Email",
+        "placeholder": "Email"
+      },
+      "message": {
+        "title": "Mensaje",
+        "placeholder": "Deja tu mensaje..."
+      },
+      "submit": {
+        "title": "Enviar mensaje"
+      }
+    }
+  }
 }

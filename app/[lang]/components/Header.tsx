@@ -9,9 +9,9 @@ import { Locale } from '../../../i18n-config'
 
 const Header = ({ lang }: { lang: Locale }) => {
   return (
-    <header className='bg-white min-h-[70vh] relative
+    <header
+      className='bg-white min-h-[70vh] relative
     flex flex-col items-center sm:p-16 p-8 font-heading md:ml-[300px]'
-
     >
       <div
         className='absolute after:absolute after:top-0 after:left-[5%]
@@ -42,7 +42,8 @@ const Header = ({ lang }: { lang: Locale }) => {
         aria-hidden
       />
 
-      <div className='max-w-[1200px] w-full
+      <div
+        className='max-w-[1200px] w-full
       flex flex-col gap-8 h-full relative'
       >
         {/* <NavPageSections lang={lang} /> */}

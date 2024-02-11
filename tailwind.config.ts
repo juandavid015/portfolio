@@ -22,11 +22,12 @@ const config: Config = {
         'dark-blue': '#11112D',
         'white': '#FFFFFF',
         'black': '#171717',
-        'gray': '#D4D4D4'
+        'gray': '#D4D4D4',
+        'gray-white': '#F8F8F8'
       },
       fontFamily: {
-        sans: ['var(--font-anek-kannada)'],
-        heading: 'var(--font-raleway)'
+        sans: ['var(--font-league-spartan)'],
+        heading: 'var(--font-league-spartan)'
       },
       screens: {
         md: '970px'

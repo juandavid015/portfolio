@@ -3,18 +3,18 @@ import { GithubIcon, OpenIcon } from './Icons'
 import Image from 'next/image'
 
 export type Project = {
-    title: string;
-    description?: string
-    technologies: string[];
-    backgroundImage: string;
-    otherPreviewImages?: never[];
-    url: string;
-    repository: string;
-    button_visit?: string
-}
+  title: string;
+  description?: string;
+  technologies: string[];
+  backgroundImage: string;
+  otherPreviewImages?: never[];
+  url: string;
+  repository: string;
+  button_visit?: string;
+};
 interface ProjectCardProps {
-    project: Project
-    index: number
+  project: Project;
+  index: number;
 }
 
 const ProejectCard = ({ project, index }: ProjectCardProps) => {
@@ -23,7 +23,8 @@ const ProejectCard = ({ project, index }: ProjectCardProps) => {
       className='flex flex-col flex-wrap gap-8 hover:bg-purple-blue/20 sm:p-16 p-8
       border border-gray w-full text-black items-center'
     >
-      <div className='relative max-w-[400px] w-full max-h-[375px]
+      <div
+        className='relative max-w-[400px] w-full max-h-[375px]
       sm:h-[225px] h-[225px] cursor-pointer'
       >
         <Link
@@ -48,31 +49,20 @@ const ProejectCard = ({ project, index }: ProjectCardProps) => {
             <span className='md:text-6xl text-4xl font-bold'>
               {index + 1 + '.'}
             </span>
-            <span>
-              {` ${project.title}`}
-            </span>
+            <span>{` ${project.title}`}</span>
           </h3>
         </Link>
-        <p>
-          {project.description}
-        </p>
+        <p>{project.description}</p>
         <div>
-          <h4 className='font-bold text-iris'>
-            Techs:
-          </h4>
+          <h4 className='font-bold text-iris'>Techs:</h4>
           <ul className='flex flex-wrap gap-2'>
-            {
-                project.technologies.map((tech, index) => {
-                  return (
-                    <li
-                      className='opacity-80'
-                      key={tech + index}
-                    >
-                      {tech}
-                    </li>
-                  )
-                })
-            }
+            {project.technologies.map((tech, index) => {
+              return (
+                <li className='opacity-80' key={tech + index}>
+                  {tech}
+                </li>
+              )
+            })}
           </ul>
           <div className='mt-3 flex gap-4 items-center'>
             <Link
@@ -85,21 +75,15 @@ const ProejectCard = ({ project, index }: ProjectCardProps) => {
               href={project.url}
               target='_blank'
             >
-              <span>
-                {project.button_visit}
-              </span>
-              <OpenIcon
-                className='h-[20px]'
-              />
+              <span>{project.button_visit}</span>
+              <OpenIcon className='h-[20px]' />
             </Link>
             <Link
               className='hover:text-blue-dark hover:fill-iris fill-iris font-bold
               hover:-translate-y-0.5 transition-all'
               href={project.repository}
             >
-              <GithubIcon
-                className='h-[20px]'
-              />
+              <GithubIcon className='h-[20px]' />
             </Link>
           </div>
         </div>
