@@ -17,22 +17,22 @@ const SwitchLangBtn = ({ lang }: { lang: Locale }) => {
   //   const pathIncludesLocale = pathName.includes(locale)
   return (
     <button
-      className='py-3 px-6 text-black fill-black font-bold
+      className='text-black fill-black
         sm:w-fit
-        flex gap-2 items-center w-full '
+        flex gap-2 items-center w-full flex-wrap '
     >
       {/* <LanguageIcon
         className='h-[30px]'
       /> */}
       <span>Language:</span>
-      <ul className='flex gap-2'>
+      <ul className='flex gap-2 flex-wrap'>
         {i18n.locales.map((locale) => {
           return (
             <li key={locale}>
               <Link
                 className={`py-1 px-2 
-                    ${locale !== lang && 'hover:bg-black/60 text-black'}
-                    ${locale === lang && 'bg-black text-white'}`}
+                    ${locale !== lang && 'hover:border-b border-black/30 text-black/70'}
+                    ${locale === lang && 'border-b text-black'}`}
                 href={redirectedPathName(locale)}
               >
                 {locale}

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import React from 'react'
 import { Locale, i18n } from '../../i18n-config'
-import { leagueSpartan } from '../fonts'
+import { leagueSpartan, victorMono } from '../fonts'
 
 export const metadata: Metadata = {
   title: 'juandgr: Web Developer',
@@ -24,8 +24,11 @@ export default function RootLayout ({
     params: { lang: Locale }
 }) {
   return (
-    <html lang={params.lang} className='scroll-smooth' style={{ scrollBehavior: 'smooth' }}>
-      <body className={`${leagueSpartan.variable} font-sans text-lg`}>{children}</body>
+    <html
+      lang={params.lang} className={`scroll-smooth ${victorMono.variable} ${leagueSpartan.variable}`}
+      style={{ scrollBehavior: 'smooth' }}
+    >
+      <body className='font-sans text-lg'>{children}</body>
     </html>
   )
 }

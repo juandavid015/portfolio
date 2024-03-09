@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import { GithubIcon, LinkedinIcon } from './Icons'
 import { Locale } from '../../../i18n-config'
 import { getDictionary } from '../../../get-dictionary'
+import { ArrowIcon } from './Icons'
+import Link from 'next/link'
 
 const Contact = async ({ lang }: { lang: Locale }) => {
   const { contact } = await getDictionary(lang)
@@ -9,89 +9,60 @@ const Contact = async ({ lang }: { lang: Locale }) => {
     <section
       id='contact'
       aria-label='Other'
-      className='w-full flex flex-wrap gap-8 max-w-[1200px]
-      p-8 py-16 border border-gray mx-auto'
+      className='w-full flex justify-center sm:p-16 p-8
+      md:px-0 md:py-16 p-8'
     >
-      <form
-        className='flex-1 w-full flex flex-col gap-8 max-w-[460px] w-[460px]'
-        target='_blank'
-        action='https://formsubmit.co/juandavidgr1002@gmail.com'
-        method='POST'
-      >
-        <h2 className='md:text-5xl text-3xl font-bold'>{contact.title}</h2>
-        <p>{contact.description}</p>
-        <label htmlFor='name' className='p-4 border-b border-iris w-full'>
-          <input
-            className='bg-transparent outline-none w-full text-iris
-            placeholder:text-iris'
-            type='text'
-            name='name'
-            id='name'
-            placeholder={contact.form.name.placeholder}
-          />
-        </label>
-        <label htmlFor='email' className='p-4 border-b border-iris w-full'>
-          <input
-            className='bg-transparent outline-none w-full text-iris
-            placeholder:text-iris'
-            type='email'
-            name='email'
-            id='email'
-            placeholder={contact.form.email.placeholder}
-            required
-          />
-        </label>
-        <label htmlFor='message' className='p-4 border-b border-iris w-full'>
-          <textarea
-            className='bg-transparent outline-none resize-none w-fit text-iris w-full
-            placeholder:text-iris'
-            name='message'
-            id='message'
-            placeholder={contact.form.message.placeholder}
-            required
-            rows={3}
-          />
-        </label>
-        <button
-          type='submit'
-          className='text-white font-bold py-3 px-8 bg-iris w-fit
-          transition-all hover:bg-iris hover:translate-y-0.5
-          hover:shadow-[4px_4px_0px_#6951FF]'
-        >
-          {contact.form.submit.title}
-        </button>
-      </form>
-      <div className='flex-1 flex flex-col gap-8 '>
-        <h2 className='md:text-5xl text-3xl font-bold'>
-          {contact.extra.title}
+      <div className='md:ml-[230px] max-w-[1280px] md:w-[calc(100%-230px)] w-full
+      flex flex-col flex-wrap md:gap-8 gap-4 '
+      >   <small className='sm:text-base text-sm text-gray'>{'<Contact/>'}</small>
+        <h2 className='md:text-7xl sm:text-5xl text-3xl text-black
+      font-heading font-regular'
+        >{contact.title}
         </h2>
-        <ul className='flex  gap-8 items-center'>
-          <li className=''>
-            <Link
-              className='flex gap-2
-                hover:text-iris hover:fill-iris fill-iris font-bold
-                hover:-translate-y-0.5 transition-all'
-              href='https://www.linkedin.com/in/juan-dgr/'
-              target='_blank'
-            >
-              <span>Linkedin</span>
-              <LinkedinIcon className='h-[20px]' />
-            </Link>
-          </li>
-          <li className=''>
-            <Link
-              className='flex gap-2
-                hover:text-iris hover:fill-iris fill-iris font-bold
-                hover:-translate-y-0.5 transition-all'
-              href='https://github.com/juandavid015'
-              target='_blank'
-            >
-              <span>Github</span>
-              <GithubIcon className='h-[20px]' />
-            </Link>
-          </li>
-        </ul>
+        <div className='w-full flex flex-wrap gap-8'>
+          <p>{contact.description}</p>
+          <ul className='flex flex-wrap gap-6'>
+            <li>
+              <Link
+                href='mailto:juandavidgr1002@gmail.com'
+                className='font-bold flex items-center gap-2
+                transition-all hover:-translate-y-0.5
+            hover:text-iris hover:fill-iris'
+                target='_blank'
+              >
+                <span>Email</span>
+                <ArrowIcon className='h-[20px] -rotate-[45deg]' />
+              </Link>
+            </li>
+            <li>
+              <Link
+                href='https://github.com/juandavid015'
+                className='font-bold flex items-center gap-2
+                transition-all hover:-translate-y-0.5
+            hover:text-iris hover:fill-iris'
+                target='_blank'
+              >
+                <span>Github</span>
+                <ArrowIcon className='h-[20px] -rotate-[45deg]' />
+              </Link>
+            </li>
+            <li>
+              <Link
+                href='https://www.linkedin.com/in/juan-dgr/'
+                className='font-bold flex items-center gap-2
+                transition-all hover:-translate-y-0.5
+            hover:text-iris hover:fill-iris'
+                target='_blank'
+              >
+                <span>LinkedIn</span>
+                <ArrowIcon className='h-[20px] -rotate-[45deg]' />
+              </Link>
+            </li>
+          </ul>
+        </div>
+
       </div>
+
     </section>
   )
 }
