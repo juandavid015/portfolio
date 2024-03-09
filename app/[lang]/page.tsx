@@ -4,7 +4,7 @@ import Header from './components/Header'
 
 import Skills from './components/Skills'
 import Projects from './components/Projects'
-import Other from './components/Other'
+// import Other from './components/Other'
 import Footer from './components/Footer'
 import { Locale } from '../../i18n-config'
 import NavPageSections from './components/NavSections'
@@ -17,12 +17,11 @@ const IndexPage = async ({ params: { lang } }: { params: { lang: Locale } }) => 
     <>
       <NavPageSections lang={lang} />
       <Header lang={lang} />
-      <main className='font-heading text-lg md:ml-[300px]'>
+      <main className='sm:text-xl text-md '>
 
         <About lang={lang} />
-        <Skills lang={lang} />
         <Projects lang={lang} />
-        <Other lang={lang} />
+        <Skills lang={lang} />
 
       </main>
       <Footer lang={lang} />

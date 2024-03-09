@@ -6,13 +6,13 @@ import { Locale } from '../../../i18n-config'
 const Footer = ({ lang }: { lang: Locale }) => {
   return (
     <footer
-      className='bg-white
-        flex flex-col gap-16 items-center text-black
-        md:ml-[300px] mr-auto
-        sm:px-16 px-8'
+      className='bg-white sm:text-xl text-md
+        flex flex-col gap-16 items-center text-black'
     >
       <Contact lang={lang} />
-      <div className='max-w-[1200px] pb-16'>
+      <div className='w-full sm:p-16 p-8 bg-black text-white
+      flex flex-col items-center justify-center font-medium'
+      >
         <p>
           Built and designed by
           <Link
@@ -24,9 +24,11 @@ const Footer = ({ lang }: { lang: Locale }) => {
             {' @juandgr'}
           </Link>
         </p>
-        <div className='flex flex-col items-center gap-2 border-t border-purple-blue/30'>
+        <div className='flex flex-col items-center gap-2
+        border-t border-purple-blue/30'
+        >
           <p>Application made with</p>
-          <NextJsIcon className='h-[12px] fill-black' />
+          <NextJsIcon className='h-[12px] fill-white' />
         </div>
       </div>
     </footer>

@@ -7,18 +7,17 @@ const HeaderContent = async ({ lang }: { lang: Locale }) => {
   return (
     <div
       className='flex flex-wrap items-center gap-8 justify-center mt-16
-    w-full h-full 2xl:justify-between'
+    w-full h-full xl:justify-between'
     >
       <div className='max-w-[650px] flex flex-col gap-8 w-fit'>
-        <h1 className='inline-flex flex-col gap-4 leading-none'>
-          <span className='text-black 2xl:text-6xl md:text-5xl text-4xl font-bold'>
+        <h1 className='inline-flex flex-col gap-4 leading-none font-heading'>
+          <span className='text-black xl:text-6xl md:text-5xl text-4xl font-bold'>
             {header.subtitle}
           </span>
           <span
-            className='text-black 2xl:text-[86px] md:text-7xl text-5xl font-bold
+            className='text-iris xl:text-[86px] md:text-7xl sm:text-5xl text-5xl font-bold
            relative z-[10] inline-flex w-fit
-           before:absolute before:top-[calc(100%-0.25rem)] before:left:0
-           before:h-[25px] before:w-full before:bg-iris'
+'
           >
             {header.title}
           </span>
@@ -27,7 +26,7 @@ const HeaderContent = async ({ lang }: { lang: Locale }) => {
       </div>
       <div
         className='relative max-w-[300px] w-full max-h-[360px] h-[360px]
-          bg-none flex bg-white
+          bg-none flex bg-white before:box-content
           border-black border
           before:absolute before:border before:border-black
            before:top-[8px] before:left-[8px]

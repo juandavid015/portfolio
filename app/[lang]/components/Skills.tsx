@@ -10,13 +10,17 @@ const Skills = async ({ lang }: { lang: Locale }) => {
     <section
       id='skills'
       aria-label='Skills'
-      className='w-full flex justify-center sm:px-16 px-8'
+      className='w-full flex justify-center sm:p-16 p-8
+      md:px-0 md:py-16 p-8'
     >
       <div
-        className={`max-w-[1200px] w-full
-        flex flex-col gap-4 border border-gray p-8`}
+        className={`md:ml-[230px] max-w-[1280px] md:w-[calc(100%-230px)] w-full
+        flex flex-col md:gap-8 gap-4 `}
       >
-        <h2 className='md:text-5xl text-3xl font-bold text-black'>
+        <small className='sm:text-base text-sm text-gray'>{'<Skills/>'}</small>
+        <h2 className='md:text-7xl sm:text-5xl text-3xl text-black
+        font-heading font-regular'
+        >
           {skills['title:']}
         </h2>
         <p>{skills.description}</p>

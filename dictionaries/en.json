@@ -2,7 +2,7 @@
   "header": {
     "nav_links": ["About", "Skills", "Work", "Contact"],
     "title": "Web Developer",
-    "subtitle": "Hey! I'm Juan,",
+    "subtitle": "",
     "description": "I like to create attractive, structured and well communicated solutions for all kind of web users.",
     "cv": {
       "title": "Download CV"
@@ -11,7 +11,7 @@
   "about": {
     "title": "About me",
     "description": {
-      "paragraph1": "My biography and related topics.",
+      "paragraph1": "My name is Juan David Román.",
       "paragraph2": "I'm based in Colombia and started my road as a programmer since 2022 as an autodidact. From there, my curiosity and passion for this career have been growing each day. Currently i’ve been working with front end and back end technologies building somethings for the web",
       "paragraph3": "Also, i'm a person who: likes continuous learning, dedicated, oriented to details and with good analytical ability. Right now and for the future: i want to learn/practice more about design as an extra for my web skills improvement."
     },
@@ -31,17 +31,19 @@
     ]
   },
   "skills": {
-    "title:": "Skills & technologies",
+    "title:": "Skills and technologies",
     "description": "Some of the technologies that i’ve been working with:"
   },
   "work": {
     "main": {
-      "title": "Projects",
+      "title": "Projects i've been working on",
       "description": "Some of the more remarkable projects. Fullstack projects.",
       "projects": [
         {
-          "title": "Soflink - Project management platform'",
+          "title": "Soflink",
+          "slug": "project management platform",
           "description": "Collaborative application for project management. Organize, add, assign and eliminate project tasks.",
+          "color": "#8C52FF",
           "technologies": [
             "Typescript",
             "ReactJS",
@@ -62,7 +64,9 @@
           "button_visit": "View project"
         },
         {
-          "title": "Zero Two - Anime page",
+          "title": "Zero Two",
+          "color": "#FF650F",
+          "slug": "anime list",
           "description": "Manage data brought from an external API (Kitsu API). Some features: process and functionality for authentication and authorization with third parties (log in and register); adding to the list and changing user settings; filtering, sorting and searching the anime list; comment interaction in anime episodes.",
           "technologies": [
             "Typescript",
@@ -87,6 +91,8 @@
       "projects": [
         {
           "title": "U-buy - Ecommerce Web design",
+          "slug": "e commerce web design",
+          "color" :"#7646FF",
           "resume": "This is a partial full design page application for an e-commerce concept. ",
           "technologies": ["Typescript", "ReactJS", "TailwindCSS", "HTML"],
           "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1701208938/u-buy.vercel.app__Desktop_ha68ha.webp",
@@ -96,6 +102,8 @@
         },
         {
           "title": "Analyze and generate images with AI",
+          "slug": "design",
+          "color" :"#7646FF",
           "resume": "Basic and small web application for generating and analyzing images by using OpenAI Dall-3 and Azure image analyzis 4.0 models.",
           "technologies": [
             "JavaScript",
@@ -112,6 +120,8 @@
         },
         {
           "title": "Room home page design",
+          "slug": "design",
+          "color" :"#7646FF",
           "resume": "Design of room home page. Only structure and design. No interactivity.",
           "technologies": ["JavaScript", "ReactJS", "CSS", "HTML"],
           "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1701180225/room-home-page-eight.vercel.app__Desktop_lqnbwg.webp",
@@ -121,6 +131,8 @@
         },
         {
           "title": "Todo App",
+          "slug": "design",
+          "color" :"#7646FF",
           "resume": "Add things to do on your daily",
           "technologies": ["JavaScript", "ReactJS", "CSS", "HTML"],
           "backgroundImage": "https://res.cloudinary.com/dut4cwhtd/image/upload/v1675702600/Desktop_Result_2_iikers.png",
@@ -132,8 +144,8 @@
     }
   },
   "contact": {
-    "title": "Contact",
-    "description": "Get in touch or shoot me an email directly on juandavidgr1002@gmail.com",
+    "title": "Get in contact with me",
+    "description": "Shoot me an email directly or find me in the following social networks:",
     "extra": {
       "title": "Or find me in"
     },

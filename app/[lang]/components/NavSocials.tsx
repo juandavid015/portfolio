@@ -6,12 +6,12 @@ import { getDictionary } from '../../../get-dictionary'
 const NavSocials = async ({ lang }: { lang: Locale }) => {
   const { header } = await getDictionary(lang)
   return (
-    <nav className='flex flex-wrap gap-8'>
+    <nav className='flex flex-wrap gap-8 xl:justify-start justify-center'>
       <ul className='flex  gap-8 items-center text-purple-blue'>
         <span className='border-purple-blue/50 border-r pr-2'>Socials</span>
         <li className=''>
           <Link
-            className='flex gap-2
+            className='flex gap-2 items-center
                 hover:text-iris hover:fill-iris fill-purple-blue font-bold
                 hover:-translate-y-0.5 transition-all'
             href='https://www.linkedin.com/in/juan-dgr/'
@@ -23,7 +23,7 @@ const NavSocials = async ({ lang }: { lang: Locale }) => {
         </li>
         <li className=''>
           <Link
-            className='flex gap-2
+            className='flex gap-2 items-center
                 hover:text-iris hover:fill-iris fill-purple-blue font-bold
                 hover:-translate-y-0.5 transition-all'
             href='https://github.com/juandavid015'

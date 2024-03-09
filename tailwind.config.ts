@@ -21,19 +21,21 @@ const config: Config = {
         'blue-white': '#C2D9FF',
         'dark-blue': '#11112D',
         'white': '#FFFFFF',
-        'black': '#171717',
+        'black': '#000000',
         'gray': '#D4D4D4',
-        'gray-white': '#F8F8F8'
+        'gray-white': '#F8F8F8',
+        'gray-purple': '#FBFBFB'
       },
       fontFamily: {
         sans: ['var(--font-league-spartan)'],
-        heading: 'var(--font-league-spartan)'
+        heading: 'var(--font-josefin-sans)'
       },
       screens: {
         md: '970px'
       },
       gridTemplateColumns: {
-        layoutOherProjects: 'repeat(auto-fit, minmax(250px, 1fr))'
+        layoutOherProjects: 'repeat(auto-fit, minmax(250px, 1fr))',
+        layoutProjects: 'repeat(3, minmax(250px, 1fr))'
       }
     }
   },

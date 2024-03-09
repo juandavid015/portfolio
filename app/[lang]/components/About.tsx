@@ -2,6 +2,7 @@ import React from 'react'
 import { getDictionary } from '../../../get-dictionary'
 import { Locale } from '../../../i18n-config'
 import { ArrowIcon } from './Icons'
+import Link from 'next/link'
 
 const About = async ({ lang }: { lang: Locale }) => {
   const { about } = await getDictionary(lang)
@@ -9,15 +10,19 @@ const About = async ({ lang }: { lang: Locale }) => {
     <section
       id='about'
       aria-label='About'
-      className='w-full flex justify-center sm:px-16 px-8 '
+      className='w-full flex justify-center
+      bg-gray-white sm:p-16 p-8
+      md:px-0 md:py-16 p-8 '
     >
       <div
-        className={`max-w-[1200px] w-full
-      flex flex-col md:flex-nowrap flex-wrap gap-8 border border-gray
-       p-8
-      border-b-0`}
+        className={`md:ml-[230px] max-w-[1280px] md:w-[calc(100%-230px)] w-full
+      flex flex-col md:flex-nowrap flex-wrap md:gap-8 gap-4 
+      `}
       >
-        <h2 className='md:text-5xl text-3xl font-bold text-black'>
+        <small className='sm:text-base text-sm text-gray'>{'<About/>'}</small>
+        <h2 className='md:text-7xl sm:text-5xl text-3xl text-black
+        font-heading font-regular '
+        >
           {about.title}
         </h2>
         <div className='flex md:flex-row flex-col flew-wrap w-full gap-4'>
@@ -34,8 +39,23 @@ const About = async ({ lang }: { lang: Locale }) => {
         >
           {about.relatedContent.map((relatedContent, index) => (
             <div key={'related' + index}>
-              <h3 className='font-bold'>{relatedContent.title}</h3>
-              <p>{relatedContent.content}</p>
+
+              <h3 className='font-medium'>{relatedContent.title}</h3>
+              {
+                relatedContent.title === 'Email'
+                  ? <Link
+                      href='mailto:juandavidgr1002@gmail.com'
+                      className='flex items-center gap-2
+                      transition-all hover:-translate-y-0.5
+                      hover:text-iris hover:fill-iris'
+                      target='_blank'
+                    >
+                    <span>{relatedContent.content}</span>
+                    <ArrowIcon className='h-[20px] -rotate-[45deg]' />
+                    {/* eslint-disable-next-line react/jsx-closing-tag-location */}
+                  </Link>
+                  : <p>{relatedContent.content}</p>
+              }
             </div>
           ))}
         </div>
