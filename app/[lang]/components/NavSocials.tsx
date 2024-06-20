@@ -43,8 +43,8 @@ const NavSocials = async ({ lang }: { lang: Locale }) => {
             hover:shadow-[4px_4px_0px_#6951FF] '
         href={
           lang === 'es'
-            ? '/pdf/JUAN_GARZON_WEB_DEVELOPER_ES.pdf'
-            : '/pdf/JUAN_GARZON_WEB_DEVELOPER_EN.pdf'
+            ? '/pdf/SUMMARY_ES.pdf'
+            : '/pdf/SUMMARY_EN.pdf'
         }
         target='_blank'
         rel='noopener noreferrer'

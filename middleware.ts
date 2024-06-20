@@ -37,8 +37,8 @@ export function middleware (request: NextRequest) {
       '/vercel.svg',
       '/images/profile-pic.png',
       '/images/brand-name-logo.png',
-      '/pdf/JUAN_GARZON_WEB_DEVELOPER_EN.pdf',
-      '/pdf/JUAN_GARZON_WEB_DEVELOPER_ES.pdf'
+      '/pdf/SUMMARY_EN.pdf',
+      '/pdf/SUMMARY_ES.pdf'
       // Your other files in `public`
     ].includes(pathname)
   ) { return }
