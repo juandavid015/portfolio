@@ -13,7 +13,7 @@ const Contact = async ({ lang }: { lang: Locale }) => {
       md:px-0 md:py-16 p-8'
     >
       <div className='md:ml-[230px] max-w-[1280px] md:w-[calc(100%-230px)] w-full
-      flex flex-col flex-wrap md:gap-8 gap-4 '
+      flex flex-col flex-wrap md:gap-8 gap-4 md:px-6'
       >   <small className='sm:text-base text-sm text-gray'>{'<Contact/>'}</small>
         <h2 className='md:text-7xl sm:text-5xl text-3xl text-black
       font-heading font-regular'

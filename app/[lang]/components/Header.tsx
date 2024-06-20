@@ -17,7 +17,7 @@ const Header = ({ lang }: { lang: Locale }) => {
 
       <div
         className='md:ml-[230px] max-w-[1280px] md:w-[calc(100%-230px-18px)] w-full
-      flex flex-col gap-8 h-full relative '
+      flex flex-col gap-8 h-full relative md:px-6'
       >
         {/* <NavPageSections lang={lang} /> */}
         <HeaderContent lang={lang} />

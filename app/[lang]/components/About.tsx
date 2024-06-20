@@ -16,7 +16,7 @@ const About = async ({ lang }: { lang: Locale }) => {
     >
       <div
         className={`md:ml-[230px] max-w-[1280px] md:w-[calc(100%-230px)] w-full
-      flex flex-col md:flex-nowrap flex-wrap md:gap-8 gap-4 
+      flex flex-col md:flex-nowrap flex-wrap md:gap-8 gap-4 md:px-6
       `}
       >
         <small className='sm:text-base text-sm text-gray'>{'<About/>'}</small>
