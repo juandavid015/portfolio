@@ -26,15 +26,15 @@ export const experience: readonly ExperienceEntry[] = [
     highlights: [
       {
         en: 'Owned billing and payments end to end: Stripe subscriptions, client credits, designer payouts and promotions.',
-        es: 'Tuve a mi cargo la facturación y los pagos de punta a punta: suscripciones con Stripe, créditos de clientes, pagos a diseñadores y promociones.',
+        es: 'Me encargué de punta a punta de la facturación y los pagos: suscripciones con Stripe, créditos para clientes, pagos a diseñadores y promociones.',
       },
       {
         en: 'Built the AI pricing engine that automatically quotes 72% of client briefs. An LLM classifies each brief; deterministic code sets the price.',
-        es: 'Desarrollé el motor de precios con IA que cotiza automáticamente el 72% de los briefs de clientes. Un LLM clasifica cada brief; el precio lo calcula código determinista.',
+        es: 'Desarrollé el sistema de cotización con IA que le pone precio automáticamente al 72% de los briefs. Un LLM clasifica cada brief y el precio lo calcula el código.',
       },
       {
         en: 'Built the API endpoints behind the activation and retention email campaigns run by ops and marketing.',
-        es: 'Desarrollé los endpoints de API detrás de las campañas de correo de activación y retención que manejan operaciones y marketing.',
+        es: 'Desarrollé los endpoints de API que alimentan las campañas de correo de activación y retención de operaciones y marketing.',
       },
     ],
   },
@@ -43,20 +43,20 @@ export const experience: readonly ExperienceEntry[] = [
     period: { start: '2024-10', end: '2025-07' },
     role: {
       en: 'Full-stack developer, then frontend lead',
-      es: 'Desarrollador full-stack, luego líder de frontend',
+      es: 'Desarrollador full-stack y después líder de frontend',
     },
     summary: {
       en: 'A Grayola spin-off built for agencies.',
-      es: 'Un spin-off de Grayola creado para agencias.',
+      es: 'Un spin-off de Grayola pensado para agencias.',
     },
     highlights: [
       {
         en: 'Helped build the product from scratch, then was promoted to frontend lead, leading two developers.',
-        es: 'Ayudé a construir el producto desde cero y luego me ascendieron a líder de frontend, a cargo de dos desarrolladores.',
+        es: 'Ayudé a construir el producto desde cero; después me ascendieron a líder de frontend, con dos desarrolladores a cargo.',
       },
       {
         en: 'Made nearly every page load faster by reworking data fetching: query optimization, caching, server components and prefetching.',
-        es: 'Hice que casi todas las páginas cargaran más rápido al rehacer la obtención de datos: optimización de consultas, caché, server components y precarga.',
+        es: 'Reduje el tiempo de carga de casi todas las páginas replanteando cómo se obtenían los datos: optimización de consultas, caché, Server Components y precarga de enlaces.',
       },
     ],
   },
@@ -69,7 +69,7 @@ export const experience: readonly ExperienceEntry[] = [
     },
     summary: {
       en: 'Short contract on a cybersecurity product built on agentic AI. Redesigned its main chat interface.',
-      es: 'Contrato corto en un producto de ciberseguridad basado en IA agéntica. Rediseñé su interfaz principal de chat.',
+      es: 'Contrato corto en un producto de ciberseguridad basado en agentes de IA. Rediseñé su interfaz principal de chat.',
     },
   },
   {
@@ -81,7 +81,7 @@ export const experience: readonly ExperienceEntry[] = [
     },
     summary: {
       en: 'Frontend internship at a startup from 500 Global LatAm, batch 18.',
-      es: 'Pasantía de frontend en una startup de 500 Global LatAm, batch 18.',
+      es: 'Pasantía de frontend en una startup del batch 18 de 500 Global LatAm.',
     },
   },
 ];

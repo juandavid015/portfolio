@@ -35,7 +35,7 @@ export const profile: Profile = {
   },
   tagline: {
     en: 'I look for the simplest version of a problem, then build the solution with care.',
-    es: 'Busco la versión más simple de un problema y construyo la solución con cuidado.',
+    es: 'Busco la forma más simple de resolver un problema y la construyo con cuidado.',
   },
   role: {
     en: 'Full-stack engineer',

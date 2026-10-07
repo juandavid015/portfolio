@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Juan David · Desarrollador de software full-stack",
-    "description": "Desarrollador full-stack que construye productos SaaS en producción con TypeScript, React, Next.js y PostgreSQL. Disponible para trabajo remoto."
+    "description": "Desarrollador full-stack en startups en etapa temprana: productos SaaS con TypeScript, React, Next.js y PostgreSQL. Disponible para trabajo remoto."
   },
   "Layout": {
     "skipToContent": "Saltar al contenido"
@@ -24,7 +24,7 @@
   },
   "Hero": {
     "downloadCv": "Descargar CV",
-    "getInTouch": "Contactarme",
+    "getInTouch": "Escríbeme",
     "localTime": "Hora local · {country}",
     "timeZoneNote": "UTC−5. La misma hora del este o del centro de EE. UU., según la temporada."
   },
@@ -43,22 +43,22 @@
     "revision": "Rev. {year}",
     "origin": "Origen",
     "howIWork": "Cómo trabajo",
-    "palette": "Paleta de color",
+    "palette": "Paleta de colores",
     "editions": "Ediciones",
     "currentEdition": "Actual"
   },
   "Contact": {
-    "heading": "¿Tienes un rol en mente?",
+    "heading": "¿Tienes una vacante en mente?",
     "github": "GitHub",
     "linkedin": "LinkedIn",
     "cv": "CV"
   },
   "Footer": {
-    "madeIn": "Diseñado y construido en Colombia"
+    "madeIn": "Diseñado y desarrollado en Colombia"
   },
   "NotFound": {
     "title": "Página no encontrada",
-    "description": "Esta página no existe o cambió de dirección.",
+    "description": "Esta página no existe o ya no está aquí.",
     "backHome": "Volver al inicio"
   }
 }
