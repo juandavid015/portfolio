@@ -18,6 +18,8 @@ const palette = {
   paper: '#EDE8DC',
 } as const satisfies Record<string, Hex>;
 
+export type PaletteToken = keyof typeof palette;
+
 /** Previous yearly editions, newest first. */
 const past: readonly PastEdition[] = [];
 

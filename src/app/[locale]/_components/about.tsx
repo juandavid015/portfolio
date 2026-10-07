@@ -1,9 +1,25 @@
 import { useLocale, useTranslations } from 'next-intl';
 
 import { about } from '@/content/about';
-import { edition } from '@/content/edition';
+import { edition, type PaletteToken } from '@/content/edition';
+import { cn } from '@/lib/utils';
 
 import { Section } from './section';
+
+/**
+ * Static class names (not inline styles, which the CSP blocks), so Tailwind can
+ * generate them. Keyed by token: a new palette color without a swatch fails typecheck.
+ */
+const swatchColors = {
+  ink: 'bg-(--ink)',
+  violet: 'bg-(--violet)',
+  lavender: 'bg-(--lavender)',
+  'paper-deep': 'bg-(--paper-deep)',
+  paper: 'bg-(--paper)',
+} satisfies Record<PaletteToken, string>;
+
+// `Object.keys` is typed as `string[]`; the palette's own keys are exactly `PaletteToken`.
+const paletteTokens = Object.keys(edition.palette) as PaletteToken[];
 
 export function About({ index }: { index: number }) {
   const t = useTranslations('About');
@@ -53,15 +69,13 @@ export function About({ index }: { index: number }) {
         <div className="flex flex-col gap-4 bg-background p-6">
           <h3 className="type-label">{t('palette')}</h3>
           <ul className="flex flex-wrap gap-3.5 font-mono text-[10px] tracking-[0.04em]">
-            {Object.entries(edition.palette).map(([token, hex]) => (
+            {paletteTokens.map((token) => (
               <li key={token} className="flex flex-col items-center gap-2">
-                {/* The swatch shows the token itself, so the palette can't drift from globals.css. */}
                 <span
                   aria-hidden="true"
-                  className="size-10 rounded-full border"
-                  style={{ backgroundColor: `var(--${token})` }}
+                  className={cn('size-10 rounded-full border', swatchColors[token])}
                 />
-                {hex.slice(1)}
+                {edition.palette[token].slice(1)}
               </li>
             ))}
           </ul>
