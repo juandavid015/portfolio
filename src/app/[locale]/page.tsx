@@ -1,7 +1,15 @@
-import { useTranslations } from 'next-intl';
+import { About } from './_components/about';
+import { Contact } from './_components/contact';
+import { Experience } from './_components/experience';
+import { Hero } from './_components/hero';
 
 export default function HomePage() {
-  const t = useTranslations('Metadata');
-
-  return <h1>{t('title')}</h1>;
+  return (
+    <main id="main" className="flex flex-col gap-px">
+      <Hero />
+      <Experience index={1} />
+      <About index={2} />
+      <Contact index={3} />
+    </main>
+  );
 }

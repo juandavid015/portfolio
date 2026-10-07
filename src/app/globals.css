@@ -79,3 +79,18 @@
     @apply bg-primary text-primary-foreground;
   }
 }
+
+/*
+ * Composite text styles. Named `type-*` rather than `text-*` so `cn` never
+ * mistakes them for a Tailwind font size or color.
+ */
+
+/* Small monospaced caps: labels, metadata, navigation. */
+@utility type-label {
+  @apply font-mono text-xs tracking-[0.08em] uppercase;
+}
+
+/* Expanded heavy caps: the edition's display face. Size and leading are set per use. */
+@utility type-display {
+  @apply font-extrabold uppercase font-stretch-expanded;
+}

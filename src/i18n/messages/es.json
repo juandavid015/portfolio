@@ -3,6 +3,59 @@
     "title": "Juan David · Desarrollador de software full-stack",
     "description": "Desarrollador full-stack que construye productos SaaS en producción con TypeScript, React, Next.js y PostgreSQL. Disponible para trabajo remoto."
   },
+  "Layout": {
+    "skipToContent": "Saltar al contenido"
+  },
+  "Header": {
+    "homeLabel": "Juan David, inicio",
+    "editionShort": "Ed. {year}",
+    "edition": "Portafolio · Edición {year}",
+    "navLabel": "Principal"
+  },
+  "Sections": {
+    "experience": "Experiencia",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "LocaleSwitcher": {
+    "label": "Idioma",
+    "en": "English",
+    "es": "Español"
+  },
+  "Hero": {
+    "downloadCv": "Descargar CV",
+    "getInTouch": "Contactarme",
+    "localTime": "Hora local · {country}",
+    "timeZoneNote": "UTC−5. La misma hora del este o del centro de EE. UU., según la temporada."
+  },
+  "Profile": {
+    "role": "Rol",
+    "stack": "Stack",
+    "codingSince": "Programando desde",
+    "english": "Inglés",
+    "interests": "En mi tiempo libre",
+    "availability": "Estado"
+  },
+  "Experience": {
+    "present": "Actualidad"
+  },
+  "About": {
+    "revision": "Rev. {year}",
+    "origin": "Origen",
+    "howIWork": "Cómo trabajo",
+    "palette": "Paleta de color",
+    "editions": "Ediciones",
+    "currentEdition": "Actual"
+  },
+  "Contact": {
+    "heading": "¿Tienes un rol en mente?",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "cv": "CV"
+  },
+  "Footer": {
+    "madeIn": "Diseñado y construido en Colombia"
+  },
   "NotFound": {
     "title": "Página no encontrada",
     "description": "Esta página no existe o cambió de dirección.",

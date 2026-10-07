@@ -3,6 +3,59 @@
     "title": "Juan David · Full-stack software engineer",
     "description": "Full-stack engineer building production SaaS with TypeScript, React, Next.js and PostgreSQL. Open to remote roles."
   },
+  "Layout": {
+    "skipToContent": "Skip to content"
+  },
+  "Header": {
+    "homeLabel": "Juan David, home",
+    "editionShort": "Ed. {year}",
+    "edition": "Portfolio · Edition {year}",
+    "navLabel": "Main"
+  },
+  "Sections": {
+    "experience": "Experience",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "LocaleSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "es": "Español"
+  },
+  "Hero": {
+    "downloadCv": "Download CV",
+    "getInTouch": "Get in touch",
+    "localTime": "Local time · {country}",
+    "timeZoneNote": "UTC−5. Same clock as US Eastern or Central, depending on the season."
+  },
+  "Profile": {
+    "role": "Role",
+    "stack": "Stack",
+    "codingSince": "Programming since",
+    "english": "English",
+    "interests": "Off the clock",
+    "availability": "Status"
+  },
+  "Experience": {
+    "present": "Present"
+  },
+  "About": {
+    "revision": "Rev. {year}",
+    "origin": "Origin",
+    "howIWork": "How I work",
+    "palette": "Color palette",
+    "editions": "Editions",
+    "currentEdition": "Current"
+  },
+  "Contact": {
+    "heading": "Have a role in mind?",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "cv": "CV"
+  },
+  "Footer": {
+    "madeIn": "Designed and built in Colombia"
+  },
   "NotFound": {
     "title": "Page not found",
     "description": "This page doesn't exist or has moved.",

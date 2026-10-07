@@ -1,15 +1,23 @@
 import { useTranslations } from 'next-intl';
 
+import { NotFoundMessage } from '@/components/not-found-message';
+import { buttonVariants } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
 
 export default function NotFound() {
   const t = useTranslations('NotFound');
 
   return (
-    <main>
-      <h1>{t('title')}</h1>
-      <p>{t('description')}</p>
-      <Link href="/">{t('backHome')}</Link>
+    <main id="main" className="flex flex-col">
+      <NotFoundMessage
+        title={t('title')}
+        description={t('description')}
+        action={
+          <Link href="/" className={buttonVariants({ variant: 'outline' })}>
+            {t('backHome')}
+          </Link>
+        }
+      />
     </main>
   );
 }

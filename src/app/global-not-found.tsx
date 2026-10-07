@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
+import { NotFoundMessage } from '@/components/not-found-message';
+import { buttonVariants } from '@/components/ui/button';
 import { routing } from '@/i18n/routing';
 import { fontVariables } from '@/lib/fonts';
 
@@ -24,14 +26,21 @@ export default async function GlobalNotFound() {
 
   return (
     <html lang={routing.defaultLocale} className={fontVariables}>
-      <body>
-        <main>
+      <body className="px-4 py-6 sm:px-6 sm:py-10 lg:px-10">
+        <main className="mx-auto grid max-w-340 gap-px border bg-foreground md:grid-cols-2">
           {translations.map(({ locale, t }) => (
-            <section key={locale} lang={locale}>
-              <h1>{t('title')}</h1>
-              <p>{t('description')}</p>
-              <a href={`/${locale}`}>{t('backHome')}</a>
-            </section>
+            <NotFoundMessage
+              key={locale}
+              lang={locale}
+              title={t('title')}
+              description={t('description')}
+              action={
+                // Plain anchor: this page renders outside the locale-aware navigation.
+                <a href={`/${locale}`} className={buttonVariants({ variant: 'outline' })}>
+                  {t('backHome')}
+                </a>
+              }
+            />
           ))}
         </main>
       </body>
