@@ -53,7 +53,7 @@ export function About({ index }: { index: number }) {
         <div className="flex flex-col gap-4 bg-background p-6">
           <h3 className="type-label">{t('palette')}</h3>
           <ul className="flex flex-wrap gap-3.5 font-mono text-[10px] tracking-[0.04em]">
-            {edition.palette.map(({ token, hex }) => (
+            {Object.entries(edition.palette).map(([token, hex]) => (
               <li key={token} className="flex flex-col items-center gap-2">
                 {/* The swatch shows the token itself, so the palette can't drift from globals.css. */}
                 <span

@@ -4,8 +4,11 @@ import { getLocale, getMessages, getTranslations } from 'next-intl/server';
 
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
+import { profile } from '@/content/profile';
+import { ogLocales } from '@/i18n/alternates';
 import { routing } from '@/i18n/routing';
 import { fontVariables } from '@/lib/fonts';
+import { siteUrl } from '@/lib/site-url';
 
 import '../globals.css';
 
@@ -13,12 +16,37 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+/**
+ * Site-wide defaults. Pages add their own `alternates` (canonical and hreflang),
+ * and `opengraph-image.tsx` in this segment supplies the share image.
+ */
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
   const t = await getTranslations('Metadata');
+  const title = t('title');
+  const description = t('description');
 
   return {
-    title: t('title'),
-    description: t('description'),
+    metadataBase: siteUrl,
+    title,
+    description,
+    authors: [{ name: profile.fullName, url: siteUrl }],
+    creator: profile.fullName,
+    openGraph: {
+      type: 'website',
+      siteName: profile.name,
+      title,
+      description,
+      locale: ogLocales[locale],
+      alternateLocale: routing.locales
+        .filter((other) => other !== locale)
+        .map((other) => ogLocales[other]),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+    },
   };
 }
 
