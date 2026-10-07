@@ -1,0 +1,23 @@
+# Git hooks. Install with `pnpm install`; see https://lefthook.dev
+
+pre-commit:
+  # Sequential: ESLint autofixes first, then Prettier formats the result.
+  piped: true
+  jobs:
+    - name: eslint
+      glob: '*.{js,mjs,ts,tsx}'
+      run: pnpm exec eslint --fix --max-warnings 0 --no-warn-ignored {staged_files}
+      stage_fixed: true
+    - name: prettier
+      run: pnpm exec prettier --write --ignore-unknown {staged_files}
+      stage_fixed: true
+
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: pnpm exec commitlint --edit {1}
+
+pre-push:
+  jobs:
+    - name: typecheck
+      run: pnpm typecheck

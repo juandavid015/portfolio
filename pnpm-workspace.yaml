@@ -1,4 +1,6 @@
 allowBuilds:
+  # Only runs `lefthook install` to register git hooks (skipped when CI is set).
+  lefthook: true
   unrs-resolver: false
 
 # ESLint 9 reached end of life on 2026-08-06. These plugins (bundled by
