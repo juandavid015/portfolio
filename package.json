@@ -20,6 +20,9 @@
     "check": "pnpm format:check && pnpm lint && pnpm typecheck"
   },
   "dependencies": {
+    "@base-ui/react": "1.8.0",
+    "class-variance-authority": "0.7.1",
+    "cn": "0.4.0",
     "next": "16.4.0",
     "next-intl": "4.14.9",
     "react": "19.3.0",
@@ -42,6 +45,7 @@
     "lefthook": "2.1.17",
     "prettier": "3.9.9",
     "prettier-plugin-tailwindcss": "0.8.1",
+    "shadcn": "4.21.3",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
     "typescript-eslint": "8.71.1"

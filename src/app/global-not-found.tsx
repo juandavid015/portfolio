@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
 import { routing } from '@/i18n/routing';
+import { fontVariables } from '@/lib/fonts';
 
 import './globals.css';
 
@@ -22,7 +23,7 @@ export default async function GlobalNotFound() {
   );
 
   return (
-    <html lang={routing.defaultLocale}>
+    <html lang={routing.defaultLocale} className={fontVariables}>
       <body>
         <main>
           {translations.map(({ locale, t }) => (

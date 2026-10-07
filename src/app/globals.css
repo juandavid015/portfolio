@@ -1,1 +1,81 @@
 @import 'tailwindcss';
+@import 'shadcn/tailwind.css';
+
+/*
+ * Design tokens — Edition 2026.
+ *
+ * Two layers:
+ * 1. Palette: the raw colors of this edition.
+ * 2. Roles: what each color is for (shadcn naming). Components only use roles,
+ *    so a new edition restyles the site by remapping this file.
+ *
+ * Contrast (WCAG): foreground/background 14.7:1, muted-foreground/background
+ * 7.6:1, primary/background 5.4:1, primary-foreground/primary 6.6:1,
+ * highlight/inverse 10.1:1, inverse-foreground/inverse 9.3:1.
+ */
+
+:root {
+  color-scheme: light;
+
+  /* Palette */
+  --ink: #17161c;
+  --paper: #ede8dc;
+  --paper-deep: #e4ded0;
+  --violet: #5a31f4;
+  --lavender: #c7b9ff;
+  --stone: #4a4740;
+  --mist: #bdb8cc;
+  --white: #ffffff;
+
+  /* Roles */
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --muted: var(--paper-deep);
+  --muted-foreground: var(--stone);
+  --primary: var(--violet);
+  --primary-foreground: var(--white);
+  --border: var(--ink);
+  --ring: var(--violet);
+  --inverse: var(--ink);
+  --inverse-foreground: var(--mist);
+  --highlight: var(--lavender);
+}
+
+@theme inline {
+  /* Closed system: only the roles above exist as Tailwind colors and radii. */
+  --color-*: initial;
+  --radius-*: initial;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-inverse: var(--inverse);
+  --color-inverse-foreground: var(--inverse-foreground);
+  --color-highlight: var(--highlight);
+
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+}
