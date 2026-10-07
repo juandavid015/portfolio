@@ -1,0 +1,39 @@
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    # Wait for releases to age before proposing them (supply-chain safety, like
+    # pnpm's minimumReleaseAge).
+    cooldown:
+      default-days: 3
+    # A dependency matches the first group it fits.
+    groups:
+      # Pinned to the same version and must move together.
+      next:
+        patterns: [next, eslint-config-next, '@next/*']
+      react:
+        patterns: [react, react-dom, '@types/react', '@types/react-dom']
+      minor-and-patch:
+        patterns: ['*']
+        update-types: [minor, patch]
+    ignore:
+      # TypeScript 7.0 ships without the compiler API that typescript-eslint
+      # needs. Remove once 7.1 is out and typescript-eslint supports it.
+      - dependency-name: typescript
+        versions: ['7.0.x']
+      # Types follow the Node.js major pinned in .nvmrc.
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 3
+    groups:
+      actions:
+        patterns: ['*']
