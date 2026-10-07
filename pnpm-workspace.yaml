@@ -6,6 +6,9 @@ allowBuilds:
   lefthook: true
   unrs-resolver: false
 
+# Pin exact versions: upgrades happen only through explicit, reviewable changes.
+savePrefix: ''
+
 # ESLint 9 reached end of life on 2026-08-06. These plugins (bundled by
 # eslint-config-next) work on ESLint 10 but haven't widened their peer range
 # yet. Remove each entry once the plugin declares ESLint 10 support.
