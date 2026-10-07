@@ -1,0 +1,11 @@
+{
+  "Metadata": {
+    "title": "Juan David · Desarrollador de software full-stack",
+    "description": "Desarrollador full-stack que construye productos SaaS en producción con TypeScript, React, Next.js y PostgreSQL. Disponible para trabajo remoto."
+  },
+  "NotFound": {
+    "title": "Página no encontrada",
+    "description": "Esta página no existe o cambió de dirección.",
+    "backHome": "Volver al inicio"
+  }
+}

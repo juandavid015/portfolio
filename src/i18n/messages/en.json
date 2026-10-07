@@ -1,0 +1,11 @@
+{
+  "Metadata": {
+    "title": "Juan David · Full-stack software engineer",
+    "description": "Full-stack engineer building production SaaS with TypeScript, React, Next.js and PostgreSQL. Open to remote roles."
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "This page doesn't exist or has moved.",
+    "backHome": "Back to home"
+  }
+}

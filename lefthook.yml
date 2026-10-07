@@ -6,7 +6,8 @@ pre-commit:
   jobs:
     - name: eslint
       glob: '*.{js,mjs,ts,tsx}'
-      run: pnpm exec eslint --fix --max-warnings 0 --no-warn-ignored {staged_files}
+      # Type-aware rules need Next.js route types (e.g. `next/root-params`).
+      run: pnpm typegen && pnpm exec eslint --fix --max-warnings 0 --no-warn-ignored {staged_files}
       stage_fixed: true
     - name: prettier
       run: pnpm exec prettier --write --ignore-unknown {staged_files}

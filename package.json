@@ -11,15 +11,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "typecheck": "next typegen && tsc --noEmit",
-    "lint": "eslint --max-warnings 0",
-    "lint:fix": "eslint --fix",
+    "typegen": "next typegen",
+    "typecheck": "pnpm typegen && tsc --noEmit",
+    "lint": "pnpm typegen && eslint --max-warnings 0",
+    "lint:fix": "pnpm typegen && eslint --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "check": "pnpm format:check && pnpm lint && pnpm typecheck"
   },
   "dependencies": {
     "next": "16.4.0",
+    "next-intl": "^4.14.9",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },

@@ -1,4 +1,7 @@
 allowBuilds:
+  # Prebuilt native binaries ship as optional dependencies; no build needed.
+  '@parcel/watcher': false
+  '@swc/core': false
   # Only runs `lefthook install` to register git hooks (skipped when CI is set).
   lefthook: true
   unrs-resolver: false
