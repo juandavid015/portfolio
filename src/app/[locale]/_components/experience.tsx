@@ -1,29 +1,10 @@
 import { useLocale, useTranslations } from 'next-intl';
 
 import { experience, type ExperienceEntry } from '@/content/experience';
-import type { Period, YearMonth } from '@/content/types';
+import type { Period } from '@/content/types';
 
+import { formatYearMonth, formatYearRange } from './period';
 import { Section } from './section';
-
-/** `2025-09` → `09.2025` */
-function formatYearMonth(value: YearMonth) {
-  const [year, month] = value.split('-');
-  return `${month}.${year}`;
-}
-
-function yearOf(value: YearMonth) {
-  return Number(value.slice(0, 4));
-}
-
-/** Span of years covered by all entries, e.g. `2024 — 2026`. */
-function yearRange(entries: readonly ExperienceEntry[], present: string) {
-  const starts = entries.map(({ period }) => yearOf(period.start));
-  const ends = entries.map(({ period }) => period.end);
-  const isOngoing = ends.some((end) => end === undefined);
-  const lastEnd = Math.max(...ends.filter((end) => end !== undefined).map(yearOf));
-
-  return `${Math.min(...starts)} — ${isOngoing ? present : lastEnd}`;
-}
 
 export function Experience({ index }: { index: number }) {
   const t = useTranslations('Experience');
@@ -34,7 +15,10 @@ export function Experience({ index }: { index: number }) {
       id="experience"
       index={index}
       title={tSections('experience')}
-      meta={yearRange(experience, t('present'))}
+      meta={formatYearRange(
+        experience.map(({ period }) => period),
+        t('present'),
+      )}
     >
       {experience.map((entry) => (
         <ExperienceItem key={entry.company} entry={entry} />
