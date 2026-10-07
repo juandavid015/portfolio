@@ -1,3 +1,15 @@
+allowBuilds:
+  unrs-resolver: false
+
+# ESLint 9 reached end of life on 2026-08-06. These plugins (bundled by
+# eslint-config-next) work on ESLint 10 but haven't widened their peer range
+# yet. Remove each entry once the plugin declares ESLint 10 support.
+peerDependencyRules:
+  allowedVersions:
+    eslint-plugin-import>eslint: '10'
+    eslint-plugin-jsx-a11y>eslint: '10'
+    eslint-plugin-react>eslint: '10'
+
 minimumReleaseAgeExclude:
   - '@next/env@16.4.0'
   - '@next/swc-darwin-arm64@16.4.0'
@@ -9,3 +21,5 @@ minimumReleaseAgeExclude:
   - '@next/swc-win32-arm64-msvc@16.4.0'
   - '@next/swc-win32-x64-msvc@16.4.0'
   - next@16.4.0
+  - '@next/eslint-plugin-next@16.4.0'
+  - eslint-config-next@16.4.0
