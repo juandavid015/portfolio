@@ -32,6 +32,8 @@ export async function generateMetadata(): Promise<Metadata> {
     description,
     authors: [{ name: profile.fullName, url: siteUrl }],
     creator: profile.fullName,
+    // Search Console ownership token; the tag is omitted when the variable is unset.
+    verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
     openGraph: {
       type: 'website',
       siteName: profile.name,
