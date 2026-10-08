@@ -70,12 +70,13 @@ assets/fonts/                  # Static fonts for generated images (SIL OFL)
 
 ## Deployment
 
-[Vercel](https://vercel.com) builds every push: `main` deploys to production, and each pull request gets a preview URL. The project needs two environment variables:
+[Vercel](https://vercel.com) builds every push: `main` deploys to production, and each pull request gets a preview URL. The project uses these environment variables:
 
 | Variable                       | Value                        | Why                                                                                                       |
 | ------------------------------ | ---------------------------- | --------------------------------------------------------------------------------------------------------- |
 | `ENABLE_EXPERIMENTAL_COREPACK` | `1`                          | Vercel's default pnpm is 10; Corepack makes it use the version pinned in `package.json` (pnpm 11)         |
 | `SITE_URL`                     | `https://juandgr.vercel.app` | Absolute URL for canonical links, the sitemap and share images (see [`site-url.ts`](src/lib/site-url.ts)) |
+| `GOOGLE_SITE_VERIFICATION`     | Search Console token         | Proves site ownership to Google Search Console; production only                                           |
 
 Node.js is pinned to `24.x` in `package.json`: Corepack ships with Node.js 24 but not with later versions, so an open range could silently move builds to a Node.js without it.
 
