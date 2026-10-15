@@ -29,8 +29,8 @@ export const experience: readonly ExperienceEntry[] = [
         es: 'Me encargué de punta a punta de la facturación y los pagos: suscripciones con Stripe, créditos para clientes, pagos a diseñadores y promociones.',
       },
       {
-        en: 'Built the AI pricing engine that automatically quotes 72% of client briefs. An LLM classifies each brief; deterministic code sets the price.',
-        es: 'Desarrollé el sistema de cotización con IA que le pone precio automáticamente al 72% de los briefs. Un LLM clasifica cada brief y el precio lo calcula el código.',
+        en: 'Built the AI pricing engine that automatically quotes 72% of client briefs.',
+        es: 'Desarrollé el sistema de cotización con IA que le pone precio automáticamente al 72% de los briefs.',
       },
       {
         en: 'Built the API endpoints behind the activation and retention email campaigns run by ops and marketing.',
